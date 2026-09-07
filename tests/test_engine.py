@@ -1,46 +1,54 @@
-import sys, os, datetime
+import sys
+import os
+import datetime
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from src.engine import forecast_night, di_to_multiplier, commission_price, forecast_horizon
+from src.engine import (
+    compute_peak_demand,
+    compute_suggested_price,
+    forecast_night,
+    group_consecutive_peaks,
+)
 
-FLAT = {m: 1.0 for m in range(1, 13)}
-EMPTY_RIVAL = {"n_rivals": 0, "booked_share": 0.0,
-               "p20": None, "p50": None, "p85": None}
+FLAT_SEASON = {m: 1.0 for m in range(1, 13)}
+EMPTY_RIVAL = {
+    "n_rivals": 0, "n_with_price": 0, "coverage": 0.0, "p50": None,
+    "confidence_label": "برآورد تقویمی با اطمینان پایین", "state": "unknown"
+}
 
-def test_multiplier_curve_monotonic():
-    xs = [di_to_multiplier(v) for v in (0, 20, 35, 50, 65, 85, 100)]
-    assert xs == sorted(xs) and xs[0] == 0.85 and xs[-1] == 2.50
-
-def test_friday_scores_higher_than_monday():
-    mon = forecast_night(datetime.date(2026, 9, 14), {}, FLAT, EMPTY_RIVAL)
-    fri = forecast_night(datetime.date(2026, 9, 18), {}, FLAT, EMPTY_RIVAL)
-    assert fri["di"] > mon["di"]
-    assert mon["class_"] in ("Normal", "High")
-    assert fri["class_"] != "Super-Peak"   # absolute classes: Fri ~52 -> High
-
-def test_nowruz_holiday_friday_is_super_peak():
-    d = datetime.date(2027, 3, 19)     # 1406-01-01 falls around here; verify via jalali key
-    # instead use a synthetic Thursday holiday:
+def test_peak_demand_classification():
     H = {}
-    import jdatetime
-    probe = datetime.date(2026, 10, 1)  # Thursday
-    j = jdatetime.date.fromgregorian(date=probe)
-    H[f"{j.year:04d}-{j.month:02d}-{j.day:02d}"] = ["test"]
-    r = forecast_night(probe, H, FLAT, EMPTY_RIVAL)
-    assert r["is_holiday"] and r["important_holiday"]
-    # holiday Thursday W=1.30*H=1.5 -> DI ~75+ -> Super-Peak absolute
-    assert r["class_"] in ("Peak", "Super-Peak")
+    # Farvardin 1 holiday night
+    d = datetime.date(2026, 3, 21) # 1405-01-01
+    H["1405-01-01"] = ["Nowruz"]
+    peak = compute_peak_demand(d, H, {1: 1.35}, EMPTY_RIVAL)
+    assert peak["jmonth"] == 1
+    assert peak["is_holiday"] is True
+    assert peak["demand_level"] in ("پیک", "ابرپیک")
+    assert "تعطیلی رسمی" in peak["reason"]
 
-def test_commission_price():
-    assert commission_price(3_000_000) == 3_143_000   # round to 1000
+def test_holiday_factor_not_remultiplied_on_competitor_price():
+    rival_market = {
+        "n_rivals": 10, "n_with_price": 10, "coverage": 0.8,
+        "p25": 2_500_000, "p50": 3_000_000, "p75": 3_500_000,
+        "confidence_label": "بالا", "state": "ok"
+    }
+    peak_info = {"di": 85.0, "demand_level": "ابرپیک"}
+    price_info = compute_suggested_price(peak_info, rival_market)
+    
+    # Suggested price should be based on rival P50 (3M) with limited quality adjustment (~3.3M),
+    # NOT 3M * 1.8 holiday multiplier (5.4M)!
+    assert price_info["suggested_price"] < 4_000_000
+    assert abs(price_info["suggested_price"] - 3_300_000) <= 200_000
 
-def test_price_clamped_by_rival_band():
-    rival = {"n_rivals": 10, "booked_share": 0.1,
-             "p20": 2_000_000, "p50": 2_500_000, "p85": 3_200_000}
-    r = forecast_night(datetime.date(2026, 10, 6), {}, FLAT, rival)  # Tuesday low
-    assert r["price"] >= 1_800_000                    # hard floor respected
-
-def test_horizon_rank_badges():
-    rows = forecast_horizon(datetime.date(2026, 9, 10), 30, {}, FLAT,
-                            lambda n: EMPTY_RIVAL)
-    assert len(rows) == 30
-    assert any(o.get("rank_badge") for o in rows)   # top-5/20/50% badge exists
+def test_consecutive_peaks_grouping():
+    nights = [
+        {"date": "2026-09-10", "jalali": "1405-06-19", "demand_level": "ابرپیک"},
+        {"date": "2026-09-11", "jalali": "1405-06-20", "demand_level": "پیک"},
+        {"date": "2026-09-12", "jalali": "1405-06-21", "demand_level": "عادی"},
+        {"date": "2026-09-13", "jalali": "1405-06-22", "demand_level": "ابرپیک"},
+    ]
+    ranges = group_consecutive_peaks(nights)
+    assert len(ranges) == 2
+    assert ranges[0]["start"] == "1405-06-19"
+    assert ranges[0]["end"] == "1405-06-20"
+    assert ranges[0]["nights_count"] == 2

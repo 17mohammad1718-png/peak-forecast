@@ -109,6 +109,12 @@ tr.peak .price { color:var(--gold); } tr.super .price { color:var(--red); }
 .hm .cell.riv::after { content:"◆"; position:absolute; top:1px; left:3px; font-size:7px; color:var(--accent); }
 .hm .monthlabel { grid-column:1/-1; color:var(--muted); font-size:12px; font-weight:bold;
   border-bottom:1px dashed var(--border); padding:6px 0 4px; margin:2px 0; }
+.hmT { width:100%; border-collapse:collapse; min-width:640px; }
+.hmT th { color:var(--muted); font-weight:normal; padding:8px 10px; border-bottom:1px solid var(--border); cursor:default; }
+.hmT th:hover { color:var(--muted); }
+.hmT td { padding:4px 6px; border-bottom:1px solid var(--border); text-align:center; }
+.hmT tbody tr:hover { background:#ffffff06; }
+.hmT .cell { display:inline-block; min-width:58px; cursor:default; }
 .legend2 { display:flex; gap:16px; flex-wrap:wrap; margin-top:10px; align-items:center; }
 .lg-bar { width:160px; height:10px; border-radius:5px;
   background:linear-gradient(90deg,#1a2332,#1d4d7c,#2e8bc0,#e3b341,#f85149); }
@@ -158,10 +164,53 @@ function tierColor(t){
   if (t<=th[2]) return stops[2]; if (t<=th[3]) return stops[3]; return stops[4];
 }
 function fgColor(t){ return t>=72?"#0b0f14":"#c9d4e0"; }
+function renderMonthly(root, rows, year){
+  const DOWS = ["Sat","Sun","Mon","Tue","Wed","Thu","Fri"];
+  const DOW_FA = {"Sat":"شنبه","Sun":"یکشنبه","Mon":"دوشنبه","Tue":"سه‌شنبه",
+                  "Wed":"چهارشنبه","Thu":"پنجشنبه","Fri":"جمعه"};
+  const agg = {};
+  rows.forEach(r=>{
+    const k = r.jmonth+"-"+r.dow;
+    (agg[k]=agg[k]||[]).push(r.tier);
+  });
+  const avg = arr => Math.round(arr.reduce((s,x)=>s+x,0)/arr.length);
+  let h = "";
+  h += `<div style="overflow:auto"><table class="hmT"><thead><tr>
+    <th style="min-width:90px">ماه</th>`;
+  for (const d of DOWS) h += `<th>${DOW_FA[d]}</th>`;
+  h += `<th>میانگین ماه</th></tr></thead><tbody>`;
+  for (let m=1;m<=12;m++){
+    const rowCells = DOWS.map(d=>{
+      const a = agg[m+"-"+d];
+      if (!a) return `<td class="muted">—</td>`;
+      const t = avg(a);
+      return `<td><div class="cell" data-tip="${JM[m-1]} ${year} · ${DOW_FA[d]} | شدت: ${t}"
+        style="background:${tierColor(t)};color:${fgColor(t)}">
+        <span class="en">${t}</span></div></td>`;
+    }).join("");
+    const monthVals = [];
+    for (const d of DOWS){ const a = agg[m+"-"+d]; if(a) monthVals.push(avg(a)); }
+    const mt = monthVals.length?avg(monthVals):0;
+    h += `<tr><td style="font-weight:bold;white-space:nowrap">${JM[m-1]} <span class="muted en">${year}</span></td>${rowCells}
+      <td><b class="en">${mt}</b></td></tr>`;
+  }
+  h += `</tbody></table></div>
+    <div class="legend2"><span class="muted">کم</span>
+    <div class="lg-bar"></div><span class="muted">پیک</span>
+    <span class="muted" style="margin-inline-start:14px">هر سلول = میانگین شدت تقاضای آن روزِ هفته در آن ماه</span></div>`;
+  root.innerHTML = h;
+  root.querySelectorAll(".hm-year button").forEach(b=>{
+    b.onclick = ()=>{
+      if (b.dataset.y){ hmYear = b.dataset.y; }
+      if (b.dataset.m){ hmMode = b.dataset.m; }
+      render();
+    };
+  });
+}
 document.getElementById("gen").textContent = DATA.latest.generated_at.slice(0,10);
 
 /* ================= TAB: YEAR HEATMAP ================= */
-let hmYear = "1405";
+let hmYear = "1405", hmMode = "daily";
 (function(){
   const root = document.getElementById("tab-hm");
   function render(){
@@ -175,7 +224,14 @@ let hmYear = "1405";
       <div class="hm-year">`;
     for (const y of Object.keys(YM).sort())
       h += `<button class="${y==hmYear?"active":""}" data-y="${y}">سال ${y}</button>`;
-    h += `</div><div style="overflow:auto"><div class="hm">`;
+    h += `<button class="${hmMode=="daily"?"active":""}" data-m="daily">روزانه</button>`;
+    h += `<button class="${hmMode=="monthly"?"active":""}" data-m="monthly">ماهانه (روز هفته)</button>`;
+    h += `</div>`;
+    if (hmMode === "monthly"){
+      renderMonthly(root, rows, hmYear);
+      return;
+    }
+    h += `<div style="overflow:auto"><div class="hm">`;
     for (const m of Object.keys(byM).sort((a,b)=>a-b)){
       h += `<div class="monthlabel">${JM[m-1]} ${hmYear}</div>`;
       const cells = byM[m];

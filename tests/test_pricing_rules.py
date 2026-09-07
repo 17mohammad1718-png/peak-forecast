@@ -7,9 +7,13 @@ def test_ladder_never_discounts_peak():
     assert ladder_multiplier(1, di=30) < 1.00
 
 def test_far_out_premium_informed_only():
-    assert ladder_multiplier(60, di=30, informed=True) > 1.0
+    assert ladder_multiplier(60, di=30, informed=True, pickup_share=0.05) > 1.0
     assert ladder_multiplier(60, di=30, informed=False) == 1.0   # unknown horizon
+    assert ladder_multiplier(60, di=30, informed=True, pickup_share=0.0) == 1.0  # no pickup
     assert ladder_multiplier(60, di=90, informed=False) == 1.20  # peak premium kept
+    # scaling: 5% pickup -> 1/3 of premium (1.066); >=15% -> full 1.20
+    assert abs(ladder_multiplier(60, di=30, informed=True, pickup_share=0.05) - 1.0667) < 0.001
+    assert ladder_multiplier(60, di=30, informed=True, pickup_share=0.15) == 1.20
 
 def test_orphan_flag_and_price():
     nights = [

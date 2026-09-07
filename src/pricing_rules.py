@@ -9,14 +9,20 @@ LADDER = [            # (max_lead_inclusive, multiplier)
     (13, 1.00), (44, 1.00), (999, 1.20)      # far-out premium L>45
 ]
 
-def ladder_multiplier(lead_days: int, di: float, informed: bool = True) -> float:
+def ladder_multiplier(lead_days: int, di: float, informed: bool = True,
+                      pickup_share: float = 0.0) -> float:
     """Far-out premium (+20%) ONLY on informative nights (rival calendars
     open). Unknown-horizon ordinary nights get neutral 1.00 (missing info is
     not premium evidence). Peak-freeze always enforced."""
     if di >= 75:                              # never discount a peak early
         return 1.00 if lead_days <= 44 else 1.20
     if lead_days > 44:
-        return 1.20 if informed else 1.00
+        if not informed:
+            return 1.00
+        # scale premium by rival pickup evidence (0 bookings -> 1.00)
+        # full +20% at >=15% rival pickup; linear below that
+        scale = max(0.0, min(1.0, pickup_share / 0.15))
+        return 1.00 + 0.20 * scale
     for cap, m in LADDER:
         if lead_days <= cap:
             return m
@@ -43,8 +49,10 @@ def apply_rules(nights: list, today=None) -> list:
         lead = (_date.fromisoformat(o["date"]) - today).days
         o["lead_days"] = max(0, lead)
         informed = o.get("rival", {}).get("state") == "ok"
+        pickup = o.get("rival", {}).get("booked_share", 0.0) or 0.0
         o["rival_state"] = o.get("rival", {}).get("state", "unknown")
-        lm = ladder_multiplier(o["lead_days"], o["di"], informed=informed)
+        lm = ladder_multiplier(o["lead_days"], o["di"], informed=informed,
+                               pickup_share=pickup)
         o["ladder_mult"] = lm
         o["price"] = int(round(o["price"] * lm, -3))
         if o["is_orphan"]:

@@ -42,6 +42,12 @@ def rival_state_for_night(db_path, night_iso, today=None):
                 "reason": ("low-coverage" if coverage < 0.6
                            else "beyond-horizon"),
                 "coverage": round(coverage, 2), "lead": lead}
+    if lead > 75 and booked / len(rows) < 0.02:
+        # calendars open but zero pickup = thin evidence, not zero demand
+        return {"n_rivals": len(rows), "booked_share": booked / len(rows),
+                "p20": pct(0.20), "p50": pct(0.50), "p85": pct(0.85),
+                "state": "unknown", "reason": "no-pickup-thin",
+                "coverage": round(coverage, 2), "lead": lead}
     return {"n_rivals": len(rows), "booked_share": booked / len(rows),
             "p20": pct(0.20), "p50": pct(0.50), "p85": pct(0.85),
             "state": "ok", "coverage": round(coverage, 2), "lead": lead}

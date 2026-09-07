@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T22:50:58",
+ "generated_at": "2026-09-07T23:13:50",
  "anchor": 2400000,
  "commission_factor": 1.0476,
  "horizon_days": 90,
@@ -1866,7 +1866,7 @@
    "di": 69.4,
    "class_": "Peak",
    "multiplier": 1.449,
-   "price": 4176000,
+   "price": 3480000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1888,7 +1888,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-23",
@@ -1948,7 +1948,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1970,7 +1970,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-25",
@@ -1989,7 +1989,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2011,7 +2011,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-26",
@@ -2030,7 +2030,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2052,7 +2052,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-27",
@@ -2071,7 +2071,7 @@
    "di": 52.0,
    "class_": "High",
    "multiplier": 1.198,
-   "price": 3456000,
+   "price": 2880000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2093,7 +2093,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-28",
@@ -2112,7 +2112,7 @@
    "di": 65.4,
    "class_": "Peak",
    "multiplier": 1.36,
-   "price": 3912000,
+   "price": 3260000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2134,7 +2134,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-29",
@@ -2194,7 +2194,7 @@
    "di": 70.3,
    "class_": "Peak",
    "multiplier": 1.47,
-   "price": 4236000,
+   "price": 3530000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2216,7 +2216,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-10-31",
@@ -2235,7 +2235,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2257,7 +2257,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-01",
@@ -2276,7 +2276,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2298,7 +2298,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-02",
@@ -2317,7 +2317,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2339,7 +2339,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-03",
@@ -2358,7 +2358,7 @@
    "di": 52.0,
    "class_": "High",
    "multiplier": 1.198,
-   "price": 3456000,
+   "price": 2880000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2380,7 +2380,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-04",
@@ -2399,7 +2399,7 @@
    "di": 65.4,
    "class_": "Peak",
    "multiplier": 1.36,
-   "price": 3912000,
+   "price": 3260000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2421,7 +2421,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-05",
@@ -2481,7 +2481,7 @@
    "di": 70.3,
    "class_": "Peak",
    "multiplier": 1.47,
-   "price": 4236000,
+   "price": 3530000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2503,7 +2503,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-07",
@@ -2522,7 +2522,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2544,7 +2544,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-08",
@@ -2563,7 +2563,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2585,7 +2585,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-09",
@@ -2604,7 +2604,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2626,7 +2626,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-10",
@@ -2645,7 +2645,7 @@
    "di": 52.0,
    "class_": "High",
    "multiplier": 1.198,
-   "price": 3456000,
+   "price": 2880000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2667,7 +2667,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-11",
@@ -2686,7 +2686,7 @@
    "di": 65.4,
    "class_": "Peak",
    "multiplier": 1.36,
-   "price": 3912000,
+   "price": 3260000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2708,7 +2708,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-12",
@@ -2809,7 +2809,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2831,7 +2831,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-15",
@@ -2850,7 +2850,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2872,7 +2872,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-16",
@@ -2891,7 +2891,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2913,7 +2913,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-17",
@@ -2932,7 +2932,7 @@
    "di": 52.0,
    "class_": "High",
    "multiplier": 1.198,
-   "price": 3456000,
+   "price": 2880000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2954,7 +2954,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-18",
@@ -2973,7 +2973,7 @@
    "di": 65.4,
    "class_": "Peak",
    "multiplier": 1.36,
-   "price": 3912000,
+   "price": 3260000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2995,7 +2995,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-19",
@@ -3055,7 +3055,7 @@
    "di": 70.3,
    "class_": "Peak",
    "multiplier": 1.47,
-   "price": 4236000,
+   "price": 3530000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -3077,7 +3077,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-21",
@@ -3096,7 +3096,7 @@
    "di": 53.7,
    "class_": "High",
    "multiplier": 1.218,
-   "price": 3504000,
+   "price": 2920000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -3118,7 +3118,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-22",
@@ -3137,7 +3137,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3159,7 +3159,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-23",
@@ -3178,7 +3178,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3200,7 +3200,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-24",
@@ -3219,7 +3219,7 @@
    "di": 50.8,
    "class_": "High",
    "multiplier": 1.185,
-   "price": 3408000,
+   "price": 3020000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3241,7 +3241,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-25",
@@ -3260,7 +3260,7 @@
    "di": 64.3,
    "class_": "Peak",
    "multiplier": 1.341,
-   "price": 3864000,
+   "price": 3424000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3282,7 +3282,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-26",
@@ -3342,7 +3342,7 @@
    "di": 69.2,
    "class_": "Peak",
    "multiplier": 1.444,
-   "price": 4164000,
+   "price": 3690000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3364,7 +3364,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-28",
@@ -3383,7 +3383,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3405,7 +3405,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-29",
@@ -3424,7 +3424,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3446,7 +3446,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-11-30",
@@ -3465,7 +3465,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3487,7 +3487,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-12-01",
@@ -3506,7 +3506,7 @@
    "di": 50.8,
    "class_": "High",
    "multiplier": 1.185,
-   "price": 3408000,
+   "price": 3020000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3528,7 +3528,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-12-02",
@@ -3547,7 +3547,7 @@
    "di": 64.3,
    "class_": "Peak",
    "multiplier": 1.341,
-   "price": 3864000,
+   "price": 3424000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3569,7 +3569,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-12-03",
@@ -3629,7 +3629,7 @@
    "di": 69.2,
    "class_": "Peak",
    "multiplier": 1.444,
-   "price": 4164000,
+   "price": 3690000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3651,7 +3651,7 @@
    "is_orphan": false,
    "min_stay": 2,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   },
   {
    "date": "2026-12-05",
@@ -3670,7 +3670,7 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3468000,
+   "price": 3073000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3692,7 +3692,7 @@
    "is_orphan": false,
    "min_stay": 1,
    "rival_state": "ok",
-   "ladder_mult": 1.2
+   "ladder_mult": 1.0634920634920635
   }
  ]
 }

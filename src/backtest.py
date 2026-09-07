@@ -11,13 +11,21 @@ def wape(pred_prices, actual_prices):
     return num / den
 
 def _q(con, night_iso, upto=None):
+    # Reconstruct "as known on snap_date": days table keeps CURRENT status per
+    # (room, date) + first_seen = flip date to booked. So booked-by-T =
+    # status='booked' AND first_seen<=T. Rows currently 'free' were free at T
+    # (they flip later, first_seen>T). 25% of booked rows are start-censored
+    # (first_seen=2026-08-08) — noted in metrics, acceptable for v1.
     if upto:
         row = con.execute(
-            "SELECT SUM(booked), COUNT(*) FROM days WHERE date=? AND last_seen<=? "
-            "AND room_id!=?", (night_iso, upto, config.OWN_ROOM_ID)).fetchone()
+            "SELECT SUM(CASE WHEN status='booked' AND first_seen<=? "
+            "THEN 1 ELSE 0 END), COUNT(*) "
+            "FROM days WHERE date=? AND room_id!=?",
+            (upto, night_iso, config.OWN_ROOM_ID)).fetchone()
     else:
         row = con.execute(
-            "SELECT SUM(booked), COUNT(*) FROM days WHERE date=? AND room_id!=?",
+            "SELECT SUM(CASE WHEN status='booked' THEN 1 ELSE 0 END), COUNT(*) "
+            "FROM days WHERE date=? AND room_id!=?",
             (night_iso, config.OWN_ROOM_ID)).fetchone()
     return (row[0] / row[1]) if row and row[1] else None
 

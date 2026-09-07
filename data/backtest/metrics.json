@@ -1,0 +1,8 @@
+{
+ "generated_at": "2026-09-07T19:27:53",
+ "pairs": 28,
+ "brier_sellout_0.7": 0.1805,
+ "wape_price": 0.2473,
+ "mean_pred_share": 0.625,
+ "mean_actual_share": 0.625
+}

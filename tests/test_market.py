@@ -20,7 +20,8 @@ def test_booked_share_excludes_own():
     st = rival_state_for_night(db, "2026-09-10")
     assert st["n_rivals"] == 2
     assert abs(st["booked_share"] - 0.5) < 1e-9
-    assert st["p50"] == 2750000
+    # 2 rival prices [2.5M, 3.0M]: quantile index = round(q*(n-1)) -> p50 = 2.5M
+    assert st["p50"] == 2500000 and st["p85"] == 3000000
 
 def test_empty_night():
     db = os.path.join(tempfile.mkdtemp(), "t.db")

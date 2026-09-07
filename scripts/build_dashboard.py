@@ -289,7 +289,7 @@ function renderMonthly(root, rows){
   function render(){
     const rows = rollingWindow();
     const byM = {};
-    rows.forEach(r=>{ (byM[r.jyear+"-"+r.jmonth]=byM[r.jmonth]||[]).push(r); });
+    rows.forEach(r=>{ (byM[r.jyear+"-"+String(r.jmonth).padStart(2,"0")]=byM[r.jmonth]||[]).push(r); });
     let h = `<div class="card">
       <h3><span class="dot"></span>هیت‌مپ تقاضا — ۱۲ ماه آینده
       <span class="muted" style="margin-inline-start:auto">
@@ -305,7 +305,8 @@ function renderMonthly(root, rows){
     h += `<div style="overflow:auto"><div class="hm">`;
     let lastKey = "";
     for (const m of Object.keys(byM).sort()){
-      h += `<div class="monthlabel">${m.replace("-", " · ")}</div>`;
+      const [ly, lm] = m.split("-").map(Number);
+      h += `<div class="monthlabel">${JM[lm-1]} <span class="en muted">${ly}</span></div>`;
       const cells = byM[m];
       const padMap = {"Sat":0,"Sun":1,"Mon":2,"Tue":3,"Wed":4,"Thu":5,"Fri":6};
       for (let i=0;i<padMap[cells[0].dow];i++) h += `<div></div>`;

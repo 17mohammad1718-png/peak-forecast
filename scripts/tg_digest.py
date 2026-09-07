@@ -66,7 +66,7 @@ def diff_msgs(new, old):
                 arrows = "🟢" if d < 0 else "🔴"
                 bullets.append(f"{arrows} {o['date']} قیمت {p['price']:,} → "
                                f"{o['price']:,} ({d:+.0f}%)")
-        if o["class_q"] == "Super-Peak" and p["class_q"] != "Super-Peak":
+        if o["class_"] == "Super-Peak" and p["class_"] != "Super-Peak":
             bullets.append(f"⚠️ پیک جدید: {o['date']} DI={o['di']}")
         if (not p.get("is_orphan")) and o.get("is_orphan"):
             bullets.append(f"🕯️ شب یتیم جدید: {o['date']} → "
@@ -74,6 +74,31 @@ def diff_msgs(new, old):
         if len(bullets) >= 15:
             break
     return bullets
+
+DW_FA = {"Mon": "دوشنبه", "Tue": "سه‌شنبه", "Wed": "چهارشنبه",
+         "Thu": "پنجشنبه", "Fri": "جمعه", "Sat": "شنبه", "Sun": "یکشنبه"}
+
+def action_cards(new):
+    """v1.1: up to 3 action cards — decision due, economics, response line."""
+    from src.floor import gross_floor
+    cands = [o for o in new["nights"]
+             if not o.get("own_booked") and not o.get("is_orphan")
+             and o.get("lead_days", 99) <= 14
+             and o.get("ladder_mult", 1) < 1.0]
+    cands.sort(key=lambda o: (o["lead_days"], -o["price"]))
+    cards = []
+    for o in cands[:3]:
+        floor_n = gross_floor(max(1, o.get("min_stay", 1)))
+        net = round(o["price"] * 0.84, -3)
+        clears = "✅ کف OK" if net >= floor_n else "⚠️ زیر کف اقتصادی"
+        cards.append(
+            f"🎯 {o['date']} ({DW_FA.get(o['dow'], o['dow'])}) — "
+            f"پیشنهاد: {o['price']:,} تومان\n"
+            f"│ تخفیف {int((1-o['ladder_mult'])*100)}% · DI {o['di']} · "
+            f"رقیب پر {round((o['rival'].get('booked_share') or 0)*100)}%\n"
+            f"│ خالص ≈ {net:,} · {clears}\n"
+            f"└ پاسخ: «done» / «hold» / «reject»")
+    return cards
 
 def main():
     latest_path = os.path.join(FORECAST_DIR, "latest.json")
@@ -86,11 +111,16 @@ def main():
         except Exception:
             old = None
     bullets = diff_msgs(new, old)
-    if not bullets:
-        print("no delta; nothing to send")
+    cards = action_cards(new)
+    parts = []
+    if bullets:
+        parts.append("📡 تغییرات:\n" + "\n".join(bullets[:8]))
+    if cards:
+        parts.append("⚡ تصمیم امروز:\n" + "\n\n".join(cards))
+    if not parts:
+        print("no delta, no actions; nothing to send")
     else:
-        text = "📡 رادار پیک — تغییرات امروز:\n" + "\n".join(bullets)
-        _send(text)
+        _send("\n\n".join(parts))
     # rotate prev = latest (copy, not move)
     json.dump(new, open(prev_path, "w", encoding="utf-8"),
               ensure_ascii=False)

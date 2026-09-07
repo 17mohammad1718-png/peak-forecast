@@ -31,3 +31,17 @@ peak-forecast/
 ## قانون پروژه (کاربر)
 فاز ۱ فقط جمع‌آوری/آماده‌سازی داده است؛ هیچ الگوریتمی تا وقتی کاربر
 نپذیرفته اجرا نمی‌شود. (الگوی فاز ۱ پروژه pricing)
+
+
+## وضعیت v1 (2026-09-07)
+ساخته شد و سبز: موتور MDF، کالکتور روزانه مستقل، بک‌تست walk-forward
+(Brier 0.18 / WAPE 0.25 روی ۲۸ جفت)، داشبورد ۴ زبانه، تلگرام delta (لایو تست شد).
+
+```bash
+python scripts/check_sources.py     # چک منابع
+python -m pytest tests/ -q          # ۲۵ تست
+python scripts/run_forecast.py      # پایپ‌لاین روزانه
+python scripts/run_backtest.py      # متریک‌های صداقت
+python scripts/build_dashboard.py   # ساخت داشبورد
+python scripts/tg_digest.py         # فقط تغییرات (پروکسی لازم)
+```

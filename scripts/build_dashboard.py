@@ -273,29 +273,41 @@ document.addEventListener("mousemove", e=>{
   });
 })();
 
-/* ================= TAB: rivals ================= */
+/* ================= TAB: rivals (Jalali) ================= */
 (function(){
+  const JM_EN = ["Farvardin","Ordibehesht","Khordad","Tir","Mordad","Shahrivar",
+                 "Mehr","Aban","Azar","Dey","Bahman","Esfand"];
+  // group by jalali month, then by jalali week-of-month (7-day chunks)
   const wk = {};
   nights.forEach(o=>{
-    const d = new Date(o.date);
-    const mon = d.getUTCMonth();
-    const weekNum = Math.floor((d.getUTCDate()-1)/7);
-    const key = o.date.slice(0,7)+"·"+weekNum;
+    const [jy, jm, jd] = o.jalali.split("-").map(Number);
+    const weekNum = Math.floor((jd-1)/7);           // 0..4
+    const key = jy+"-"+String(jm).padStart(2,"0")+"-"+weekNum;
     (wk[key]=wk[key]||[]).push(o);
   });
-  let h = '<div class="card"><h3><span class="dot"></span>اشغال تجمیعی ۳۴ رقیب (هفتگی)</h3><table><thead><tr><th>هفته</th><th>پر%</th><th>P20</th><th>P50 (میانه)</th><th>P85</th></tr></thead><tbody>';
-  for (const k of Object.keys(wk).sort()){
+  const MW = ["هفته ۱","هفته ۲","هفته ۳","هفته ۴","هفته ۵"];
+  let h = '<div class="card"><h3><span class="dot"></span>اشغال تجمیعی ۳۴ رقیب (تقویم شمسی، ماه به ماه)</h3><table><thead><tr><th>ماه</th><th>هفته</th><th>پر%</th><th>P20</th><th>P50 (میانه)</th><th>P85</th></tr></thead><tbody>';
+  const keys = Object.keys(wk).sort();
+  let lastMonth = "";
+  for (const k of keys){
+    const [jy, jm, wnum] = k.split("-");
+    const monthLabel = `${JM[Number(jm)-1]} <span class="en">${jy}</span>`;
+    if (jm !== lastMonth){
+      h += `<tr style="background:#ffffff08"><td colspan="6" style="text-align:right;font-weight:bold;color:var(--accent)">${monthLabel}</td></tr>`;
+      lastMonth = jm;
+    }
     const arr = wk[k];
     const bs = Math.round(arr.reduce((s,o)=>s+(o.rival.booked_share||0),0)/arr.length*100);
     const p20 = arr.map(o=>o.rival.p20).filter(x=>x);
     const p50 = arr.map(o=>o.rival.p50).filter(x=>x);
     const p85 = arr.map(o=>o.rival.p85).filter(x=>x);
     const avg = a=>a.length?Math.round(a.reduce((s,x)=>s+x,0)/a.length):null;
-    h += `<tr><td class="en">${k.replace("·"," هفته ")}</td><td class="en">${bs}%</td>
+    h += `<tr><td class="muted"></td><td>${MW[Number(wnum)]}</td>
+      <td class="en">${bs}%</td>
       <td class="en muted">${fmt(avg(p20))}</td><td class="en">${fmt(avg(p50))}</td>
       <td class="en muted">${fmt(avg(p85))}</td></tr>`;
   }
-  h += `</tbody></table><p class="muted">از ۱۰ آذر به بعد رقبا هنوز تقویمشان را باز نکرده‌اند (۰٪) — طبیعی است؛ هرچه نزدیک‌تر شویم داده پر می‌شود.</p></div>`;
+  h += `</tbody></table><p class="muted">اواخر تقویم رقبا هنوز باز نشده (۰٪ طبیعی است؛ هرچه نزدیک‌تر شویم داده پر می‌شود). مبنا: آخرین snapshot روزانه.</p></div>`;
   document.getElementById("tab-rivals").innerHTML = h;
 })();
 

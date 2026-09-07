@@ -256,7 +256,11 @@ let hmYear = "1405", hmMode = "daily";
       </div></div>`;
     root.innerHTML = h;
     root.querySelectorAll(".hm-year button").forEach(b=>{
-      b.onclick = ()=>{ hmYear = b.dataset.y; render(); };
+      b.onclick = ()=>{
+        if (b.dataset.y) hmYear = b.dataset.y;
+        if (b.dataset.m) hmMode = b.dataset.m;
+        render();
+      };
     });
   }
   render();

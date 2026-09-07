@@ -9,8 +9,10 @@ import math
 from . import config
 from .calendar_lib import day_type, bridge_info
 
-WEEKDAY_W = {0: 0.90, 1: 0.88, 2: 1.28, 3: 1.40, 4: 0.95, 5: 0.92, 6: 0.90}
+WEEKDAY_W = {0: 0.90, 1: 0.88, 2: 1.05, 3: 1.30, 4: 1.12, 5: 0.90, 6: 0.90}
 # Mon Tue Wed  Thu  Fri  Sat  Sun
+# Fitted from REAL rival booking shares (radar_history, 2026-08-08..09-07):
+# Thu 18% > Fri 15% > others ~14%; blended with rival price premium (Wed 135%).
 
 ANCHORS = [(0, 0.85), (35, 1.00), (65, 1.35), (85, 1.80), (100, 2.50)]
 

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T19:26:54",
+ "generated_at": "2026-09-07T20:25:48",
  "anchor": 2400000,
  "commission_factor": 1.0476,
  "horizon_days": 90,
@@ -30,9 +30,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 0,
@@ -66,9 +66,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 1,
@@ -85,14 +85,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.018,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.303,
-   "di": 65.6,
+   "mdf": 1.069,
+   "di": 50.5,
    "class_": "High",
-   "multiplier": 1.363,
-   "price": 2780000,
+   "multiplier": 1.181,
+   "price": 2406000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.4411764705882353,
@@ -100,11 +100,11 @@
     "p50": 3800000,
     "p85": 6500000
    },
-   "class_q": "High",
+   "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 2,
@@ -121,14 +121,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.018,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.425,
-   "di": 72.4,
+   "mdf": 1.323,
+   "di": 66.7,
    "class_": "High",
-   "multiplier": 1.516,
-   "price": 3276000,
+   "multiplier": 1.389,
+   "price": 2997000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.5882352941176471,
@@ -136,16 +136,16 @@
     "p50": 5000000,
     "p85": 6500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 3,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 0.9
   },
   {
@@ -157,14 +157,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.018,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.967,
-   "di": 42.9,
-   "class_": "Normal",
-   "multiplier": 1.092,
-   "price": 2489000,
+   "mdf": 1.14,
+   "di": 55.4,
+   "class_": "High",
+   "multiplier": 1.238,
+   "price": 2822000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.38235294117647056,
@@ -172,11 +172,11 @@
     "p50": 3000000,
     "p85": 5000000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 4,
@@ -193,14 +193,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.018,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.937,
-   "di": 40.5,
+   "mdf": 0.916,
+   "di": 38.8,
    "class_": "Normal",
-   "multiplier": 1.064,
-   "price": 2422000,
+   "multiplier": 1.044,
+   "price": 2384000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.38235294117647056,
@@ -210,9 +210,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 5,
@@ -246,9 +246,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 6,
@@ -282,9 +282,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 7,
@@ -318,9 +318,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 8,
@@ -337,14 +337,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.018,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.303,
-   "di": 65.6,
+   "mdf": 1.069,
+   "di": 50.5,
    "class_": "High",
-   "multiplier": 1.363,
-   "price": 3270000,
+   "multiplier": 1.181,
+   "price": 2830000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.23529411764705882,
@@ -352,11 +352,11 @@
     "p50": 4000000,
     "p85": 6500000
    },
-   "class_q": "High",
+   "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 9,
@@ -373,14 +373,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.018,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.425,
-   "di": 72.4,
+   "mdf": 1.323,
+   "di": 66.7,
    "class_": "High",
-   "multiplier": 1.516,
-   "price": 3640000,
+   "multiplier": 1.389,
+   "price": 3330000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.3235294117647059,
@@ -388,16 +388,16 @@
     "p50": 5000000,
     "p85": 6500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 10,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.0
   },
   {
@@ -409,14 +409,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.018,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.967,
-   "di": 42.9,
-   "class_": "Normal",
-   "multiplier": 1.092,
-   "price": 2620000,
+   "mdf": 1.14,
+   "di": 55.4,
+   "class_": "High",
+   "multiplier": 1.238,
+   "price": 2970000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.29411764705882354,
@@ -424,11 +424,11 @@
     "p50": 3000000,
     "p85": 5000000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 11,
@@ -445,14 +445,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.018,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.937,
-   "di": 40.5,
+   "mdf": 0.916,
+   "di": 38.8,
    "class_": "Normal",
-   "multiplier": 1.064,
-   "price": 2550000,
+   "multiplier": 1.044,
+   "price": 2510000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.23529411764705882,
@@ -462,9 +462,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 12,
@@ -498,9 +498,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 13,
@@ -534,9 +534,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 14,
@@ -570,9 +570,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 15,
@@ -589,14 +589,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.349,
-   "di": 68.2,
+   "mdf": 1.107,
+   "di": 53.1,
    "class_": "High",
-   "multiplier": 1.422,
-   "price": 3410000,
+   "multiplier": 1.212,
+   "price": 2910000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.17647058823529413,
@@ -606,9 +606,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 16,
@@ -625,14 +625,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.476,
-   "di": 75.0,
+   "mdf": 1.37,
+   "di": 69.4,
    "class_": "High",
-   "multiplier": 1.575,
-   "price": 3780000,
+   "multiplier": 1.449,
+   "price": 3480000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.14705882352941177,
@@ -642,9 +642,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 17,
@@ -661,14 +661,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.001,
-   "di": 45.5,
-   "class_": "Normal",
-   "multiplier": 1.123,
-   "price": 2700000,
+   "mdf": 1.18,
+   "di": 58.1,
+   "class_": "High",
+   "multiplier": 1.269,
+   "price": 3050000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.14705882352941177,
@@ -676,11 +676,11 @@
     "p50": 2500000,
     "p85": 5300000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 18,
@@ -697,14 +697,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.97,
-   "di": 43.1,
+   "mdf": 0.949,
+   "di": 41.4,
    "class_": "Normal",
-   "multiplier": 1.094,
-   "price": 2630000,
+   "multiplier": 1.075,
+   "price": 2580000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.08823529411764706,
@@ -714,9 +714,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 19,
@@ -750,9 +750,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 20,
@@ -786,9 +786,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 21,
@@ -822,9 +822,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 22,
@@ -841,14 +841,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.349,
-   "di": 68.2,
+   "mdf": 1.107,
+   "di": 53.1,
    "class_": "High",
-   "multiplier": 1.422,
-   "price": 3410000,
+   "multiplier": 1.212,
+   "price": 2910000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.029411764705882353,
@@ -858,9 +858,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 23,
@@ -877,14 +877,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.476,
-   "di": 75.0,
+   "mdf": 1.37,
+   "di": 69.4,
    "class_": "High",
-   "multiplier": 1.575,
-   "price": 3780000,
+   "multiplier": 1.449,
+   "price": 3480000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.058823529411764705,
@@ -894,9 +894,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 24,
@@ -913,14 +913,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.001,
-   "di": 45.5,
-   "class_": "Normal",
-   "multiplier": 1.123,
-   "price": 2700000,
+   "mdf": 1.18,
+   "di": 58.1,
+   "class_": "High",
+   "multiplier": 1.269,
+   "price": 3050000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.08823529411764706,
@@ -928,11 +928,11 @@
     "p50": 2500000,
     "p85": 5300000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 25,
@@ -949,14 +949,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.97,
-   "di": 43.1,
+   "mdf": 0.949,
+   "di": 41.4,
    "class_": "Normal",
-   "multiplier": 1.094,
-   "price": 2630000,
+   "multiplier": 1.075,
+   "price": 2580000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.029411764705882353,
@@ -966,9 +966,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 26,
@@ -1002,9 +1002,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 27,
@@ -1038,9 +1038,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 28,
@@ -1074,9 +1074,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 29,
@@ -1093,14 +1093,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.349,
-   "di": 68.2,
+   "mdf": 1.107,
+   "di": 53.1,
    "class_": "High",
-   "multiplier": 1.422,
-   "price": 3410000,
+   "multiplier": 1.212,
+   "price": 2910000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1110,9 +1110,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 30,
@@ -1129,14 +1129,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.476,
-   "di": 75.0,
+   "mdf": 1.37,
+   "di": 69.4,
    "class_": "High",
-   "multiplier": 1.575,
-   "price": 3780000,
+   "multiplier": 1.449,
+   "price": 3480000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1146,9 +1146,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 31,
@@ -1165,14 +1165,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.001,
-   "di": 45.5,
-   "class_": "Normal",
-   "multiplier": 1.123,
-   "price": 2700000,
+   "mdf": 1.18,
+   "di": 58.1,
+   "class_": "High",
+   "multiplier": 1.269,
+   "price": 3050000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1180,11 +1180,11 @@
     "p50": 2500000,
     "p85": 5300000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 32,
@@ -1201,14 +1201,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.97,
-   "di": 43.1,
+   "mdf": 0.949,
+   "di": 41.4,
    "class_": "Normal",
-   "multiplier": 1.094,
-   "price": 2630000,
+   "multiplier": 1.075,
+   "price": 2580000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1218,9 +1218,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 33,
@@ -1254,9 +1254,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 34,
@@ -1290,9 +1290,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 35,
@@ -1326,9 +1326,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 36,
@@ -1345,14 +1345,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.349,
-   "di": 68.2,
+   "mdf": 1.107,
+   "di": 53.1,
    "class_": "High",
-   "multiplier": 1.422,
-   "price": 3410000,
+   "multiplier": 1.212,
+   "price": 2910000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1362,9 +1362,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 37,
@@ -1381,14 +1381,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.476,
-   "di": 75.0,
+   "mdf": 1.37,
+   "di": 69.4,
    "class_": "High",
-   "multiplier": 1.575,
-   "price": 3780000,
+   "multiplier": 1.449,
+   "price": 3480000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1398,9 +1398,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 38,
@@ -1417,14 +1417,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.001,
-   "di": 45.5,
-   "class_": "Normal",
-   "multiplier": 1.123,
-   "price": 2700000,
+   "mdf": 1.18,
+   "di": 58.1,
+   "class_": "High",
+   "multiplier": 1.269,
+   "price": 3050000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.058823529411764705,
@@ -1432,11 +1432,11 @@
     "p50": 2500000,
     "p85": 5300000
    },
-   "class_q": "Normal",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 39,
@@ -1453,14 +1453,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 0.97,
-   "di": 43.1,
+   "mdf": 0.949,
+   "di": 41.4,
    "class_": "Normal",
-   "multiplier": 1.094,
-   "price": 2630000,
+   "multiplier": 1.075,
+   "price": 2580000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.058823529411764705,
@@ -1470,9 +1470,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 40,
@@ -1506,9 +1506,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 41,
@@ -1542,9 +1542,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 42,
@@ -1578,9 +1578,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 43,
@@ -1597,14 +1597,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.054,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.349,
-   "di": 68.2,
+   "mdf": 1.107,
+   "di": 53.1,
    "class_": "High",
-   "multiplier": 1.422,
-   "price": 3410000,
+   "multiplier": 1.212,
+   "price": 2910000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1614,9 +1614,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 44,
@@ -1633,14 +1633,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.054,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.476,
-   "di": 75.0,
+   "mdf": 1.37,
+   "di": 69.4,
    "class_": "High",
-   "multiplier": 1.575,
-   "price": 4536000,
+   "multiplier": 1.449,
+   "price": 4176000,
    "rival": {
     "n_rivals": 34,
     "booked_share": 0.0,
@@ -1650,9 +1650,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 45,
@@ -1669,10 +1669,10 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.8,
    "R": 1.0,
-   "mdf": 2.119,
+   "mdf": 2.498,
    "di": 100.0,
    "class_": "Super-Peak",
    "multiplier": 2.5,
@@ -1686,9 +1686,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 46,
@@ -1705,14 +1705,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.14,
-   "di": 55.4,
+   "mdf": 1.115,
+   "di": 53.7,
    "class_": "High",
-   "multiplier": 1.238,
-   "price": 3564000,
+   "multiplier": 1.218,
+   "price": 3504000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1722,9 +1722,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 47,
@@ -1758,9 +1758,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 48,
@@ -1794,9 +1794,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 49,
@@ -1830,9 +1830,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 50,
@@ -1849,14 +1849,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.586,
-   "di": 80.5,
-   "class_": "Peak",
-   "multiplier": 1.699,
-   "price": 4896000,
+   "mdf": 1.301,
+   "di": 65.4,
+   "class_": "High",
+   "multiplier": 1.36,
+   "price": 3912000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1864,16 +1864,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 51,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -1885,14 +1885,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.735,
-   "di": 87.3,
+   "mdf": 1.611,
+   "di": 81.7,
    "class_": "Peak",
-   "multiplier": 1.907,
-   "price": 5496000,
+   "multiplier": 1.725,
+   "price": 4968000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1902,9 +1902,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 52,
@@ -1921,14 +1921,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.177,
-   "di": 57.8,
+   "mdf": 1.388,
+   "di": 70.3,
    "class_": "High",
-   "multiplier": 1.266,
-   "price": 3648000,
+   "multiplier": 1.47,
+   "price": 4236000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1936,16 +1936,16 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 53,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.2
   },
   {
@@ -1957,14 +1957,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.14,
-   "di": 55.4,
+   "mdf": 1.115,
+   "di": 53.7,
    "class_": "High",
-   "multiplier": 1.238,
-   "price": 3564000,
+   "multiplier": 1.218,
+   "price": 3504000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -1974,9 +1974,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 54,
@@ -2010,9 +2010,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 55,
@@ -2046,9 +2046,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 56,
@@ -2082,9 +2082,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 57,
@@ -2101,14 +2101,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.586,
-   "di": 80.5,
-   "class_": "Peak",
-   "multiplier": 1.699,
-   "price": 4896000,
+   "mdf": 1.301,
+   "di": 65.4,
+   "class_": "High",
+   "multiplier": 1.36,
+   "price": 3912000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2116,16 +2116,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 58,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -2137,14 +2137,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.735,
-   "di": 87.3,
+   "mdf": 1.611,
+   "di": 81.7,
    "class_": "Peak",
-   "multiplier": 1.907,
-   "price": 5496000,
+   "multiplier": 1.725,
+   "price": 4968000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2154,9 +2154,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 59,
@@ -2173,14 +2173,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.177,
-   "di": 57.8,
+   "mdf": 1.388,
+   "di": 70.3,
    "class_": "High",
-   "multiplier": 1.266,
-   "price": 3648000,
+   "multiplier": 1.47,
+   "price": 4236000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2188,16 +2188,16 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 60,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.2
   },
   {
@@ -2209,14 +2209,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.14,
-   "di": 55.4,
+   "mdf": 1.115,
+   "di": 53.7,
    "class_": "High",
-   "multiplier": 1.238,
-   "price": 3564000,
+   "multiplier": 1.218,
+   "price": 3504000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2226,9 +2226,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 61,
@@ -2262,9 +2262,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 62,
@@ -2298,9 +2298,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 63,
@@ -2334,9 +2334,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 64,
@@ -2353,14 +2353,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.586,
-   "di": 80.5,
-   "class_": "Peak",
-   "multiplier": 1.699,
-   "price": 4896000,
+   "mdf": 1.301,
+   "di": 65.4,
+   "class_": "High",
+   "multiplier": 1.36,
+   "price": 3912000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2368,16 +2368,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 65,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -2389,14 +2389,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.735,
-   "di": 87.3,
+   "mdf": 1.611,
+   "di": 81.7,
    "class_": "Peak",
-   "multiplier": 1.907,
-   "price": 5496000,
+   "multiplier": 1.725,
+   "price": 4968000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2406,9 +2406,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 66,
@@ -2425,10 +2425,10 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.8,
    "R": 1.0,
-   "mdf": 2.119,
+   "mdf": 2.498,
    "di": 100.0,
    "class_": "Super-Peak",
    "multiplier": 2.5,
@@ -2442,9 +2442,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 67,
@@ -2461,14 +2461,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.14,
-   "di": 55.4,
+   "mdf": 1.115,
+   "di": 53.7,
    "class_": "High",
-   "multiplier": 1.238,
-   "price": 3564000,
+   "multiplier": 1.218,
+   "price": 3504000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2478,9 +2478,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 68,
@@ -2514,9 +2514,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 69,
@@ -2550,9 +2550,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 70,
@@ -2586,9 +2586,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 71,
@@ -2605,14 +2605,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.586,
-   "di": 80.5,
-   "class_": "Peak",
-   "multiplier": 1.699,
-   "price": 4896000,
+   "mdf": 1.301,
+   "di": 65.4,
+   "class_": "High",
+   "multiplier": 1.36,
+   "price": 3912000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2620,16 +2620,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 72,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -2641,14 +2641,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.735,
-   "di": 87.3,
+   "mdf": 1.611,
+   "di": 81.7,
    "class_": "Peak",
-   "multiplier": 1.907,
-   "price": 5496000,
+   "multiplier": 1.725,
+   "price": 4968000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2658,9 +2658,9 @@
    },
    "class_q": "Super-Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 73,
@@ -2677,14 +2677,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.239,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.177,
-   "di": 57.8,
+   "mdf": 1.388,
+   "di": 70.3,
    "class_": "High",
-   "multiplier": 1.266,
-   "price": 3648000,
+   "multiplier": 1.47,
+   "price": 4236000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2692,16 +2692,16 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 74,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.2
   },
   {
@@ -2713,14 +2713,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.239,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.14,
-   "di": 55.4,
+   "mdf": 1.115,
+   "di": 53.7,
    "class_": "High",
-   "multiplier": 1.238,
-   "price": 3564000,
+   "multiplier": 1.218,
+   "price": 3504000,
    "rival": {
     "n_rivals": 22,
     "booked_share": 0.0,
@@ -2730,9 +2730,9 @@
    },
    "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 75,
@@ -2766,9 +2766,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 76,
@@ -2802,9 +2802,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 77,
@@ -2838,9 +2838,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 78,
@@ -2857,14 +2857,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.22,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.562,
-   "di": 79.3,
+   "mdf": 1.281,
+   "di": 64.3,
    "class_": "High",
-   "multiplier": 1.672,
-   "price": 4812000,
+   "multiplier": 1.341,
+   "price": 3864000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -2872,16 +2872,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 79,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -2893,14 +2893,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.22,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.708,
-   "di": 86.1,
+   "mdf": 1.586,
+   "di": 80.5,
    "class_": "Peak",
-   "multiplier": 1.853,
-   "price": 5340000,
+   "multiplier": 1.699,
+   "price": 4896000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -2910,9 +2910,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 80,
@@ -2929,14 +2929,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.22,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.159,
-   "di": 56.7,
+   "mdf": 1.366,
+   "di": 69.2,
    "class_": "High",
-   "multiplier": 1.253,
-   "price": 3612000,
+   "multiplier": 1.444,
+   "price": 4164000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -2944,16 +2944,16 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 81,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.2
   },
   {
@@ -2965,14 +2965,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.22,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.122,
-   "di": 54.2,
+   "mdf": 1.098,
+   "di": 52.5,
    "class_": "High",
-   "multiplier": 1.224,
-   "price": 3528000,
+   "multiplier": 1.205,
+   "price": 3468000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -2980,11 +2980,11 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 82,
@@ -3018,9 +3018,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 83,
@@ -3054,9 +3054,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 84,
@@ -3090,9 +3090,9 @@
    },
    "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 85,
@@ -3109,14 +3109,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.22,
-   "W": 1.28,
+   "W": 1.05,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.562,
-   "di": 79.3,
+   "mdf": 1.281,
+   "di": 64.3,
    "class_": "High",
-   "multiplier": 1.672,
-   "price": 4812000,
+   "multiplier": 1.341,
+   "price": 3864000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3124,16 +3124,16 @@
     "p50": 3500000,
     "p85": 5500000
    },
-   "class_q": "Peak",
+   "class_q": "High",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 86,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 1,
    "ladder_mult": 1.2
   },
   {
@@ -3145,14 +3145,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.22,
-   "W": 1.4,
+   "W": 1.3,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.708,
-   "di": 86.1,
+   "mdf": 1.586,
+   "di": 80.5,
    "class_": "Peak",
-   "multiplier": 1.853,
-   "price": 5340000,
+   "multiplier": 1.699,
+   "price": 4896000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3162,9 +3162,9 @@
    },
    "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 87,
@@ -3181,14 +3181,14 @@
    "is_bridge": false,
    "is_weekend": true,
    "S": 1.22,
-   "W": 0.95,
+   "W": 1.12,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.159,
-   "di": 56.7,
+   "mdf": 1.366,
+   "di": 69.2,
    "class_": "High",
-   "multiplier": 1.253,
-   "price": 3612000,
+   "multiplier": 1.444,
+   "price": 4164000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3196,16 +3196,16 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Peak",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 88,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
    "ladder_mult": 1.2
   },
   {
@@ -3217,14 +3217,14 @@
    "is_bridge": false,
    "is_weekend": false,
    "S": 1.22,
-   "W": 0.92,
+   "W": 0.9,
    "H": 1.0,
    "R": 1.0,
-   "mdf": 1.122,
-   "di": 54.2,
+   "mdf": 1.098,
+   "di": 52.5,
    "class_": "High",
-   "multiplier": 1.224,
-   "price": 3528000,
+   "multiplier": 1.205,
+   "price": 3468000,
    "rival": {
     "n_rivals": 21,
     "booked_share": 0.047619047619047616,
@@ -3232,11 +3232,11 @@
     "p50": 2500000,
     "p85": 4500000
    },
-   "class_q": "High",
+   "class_q": "Normal",
    "qcut": {
-    "p50": 53.7,
-    "p80": 75.0,
-    "p95": 87.3
+    "p50": 53.1,
+    "p80": 66.7,
+    "p95": 81.7
    },
    "own_booked": false,
    "lead_days": 89,

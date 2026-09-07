@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T20:25:48",
+ "generated_at": "2026-09-07T22:50:58",
  "anchor": 2400000,
  "commission_factor": 1.0476,
  "horizon_days": 90,
@@ -12,6 +12,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -26,9 +27,12 @@
     "booked_share": 0.6470588235294118,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 0
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -38,6 +42,7 @@
    "lead_days": 0,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 0.8
   },
   {
@@ -48,6 +53,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.88,
    "H": 1.0,
@@ -62,9 +68,12 @@
     "booked_share": 0.5588235294117647,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 1
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -74,6 +83,7 @@
    "lead_days": 1,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 0.8
   },
   {
@@ -84,6 +94,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.05,
    "H": 1.0,
@@ -98,9 +109,12 @@
     "booked_share": 0.4411764705882353,
     "p20": 3000000,
     "p50": 3800000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 2
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -110,6 +124,7 @@
    "lead_days": 2,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 0.85
   },
   {
@@ -120,13 +135,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.323,
    "di": 66.7,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.389,
    "price": 2997000,
    "rival": {
@@ -134,9 +150,12 @@
     "booked_share": 0.5882352941176471,
     "p20": 3200000,
     "p50": 5000000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 3
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -146,6 +165,7 @@
    "lead_days": 3,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 0.9
   },
   {
@@ -156,6 +176,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.12,
    "H": 1.0,
@@ -170,9 +191,12 @@
     "booked_share": 0.38235294117647056,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 4
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -182,6 +206,7 @@
    "lead_days": 4,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 0.95
   },
   {
@@ -192,6 +217,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -206,9 +232,12 @@
     "booked_share": 0.38235294117647056,
     "p20": 2500000,
     "p50": 2600000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 5
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -218,6 +247,7 @@
    "lead_days": 5,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 0.95
   },
   {
@@ -228,6 +258,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -242,9 +273,12 @@
     "booked_share": 0.38235294117647056,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 6100000
+    "p85": 6100000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 6
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -254,6 +288,7 @@
    "lead_days": 6,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -264,6 +299,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -278,9 +314,12 @@
     "booked_share": 0.23529411764705882,
     "p20": 2500000,
     "p50": 2700000,
-    "p85": 6100000
+    "p85": 6100000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 7
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -290,6 +329,7 @@
    "lead_days": 7,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -300,6 +340,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.88,
    "H": 1.0,
@@ -314,9 +355,12 @@
     "booked_share": 0.14705882352941177,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 8
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -326,6 +370,7 @@
    "lead_days": 8,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -336,6 +381,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.05,
    "H": 1.0,
@@ -350,9 +396,12 @@
     "booked_share": 0.23529411764705882,
     "p20": 3000000,
     "p50": 4000000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 9
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -362,6 +411,7 @@
    "lead_days": 9,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -372,13 +422,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.323,
    "di": 66.7,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.389,
    "price": 3330000,
    "rival": {
@@ -386,9 +437,12 @@
     "booked_share": 0.3235294117647059,
     "p20": 3200000,
     "p50": 5000000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 10
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -398,6 +452,7 @@
    "lead_days": 10,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -408,6 +463,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.018,
    "W": 1.12,
    "H": 1.0,
@@ -422,9 +478,12 @@
     "booked_share": 0.29411764705882354,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5000000
+    "p85": 5000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 11
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -434,6 +493,7 @@
    "lead_days": 11,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -444,6 +504,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -458,9 +519,12 @@
     "booked_share": 0.23529411764705882,
     "p20": 2500000,
     "p50": 2700000,
-    "p85": 6100000
+    "p85": 6100000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 12
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -470,6 +534,7 @@
    "lead_days": 12,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -480,6 +545,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -494,9 +560,12 @@
     "booked_share": 0.20588235294117646,
     "p20": 2500000,
     "p50": 2700000,
-    "p85": 6100000
+    "p85": 6100000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 13
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -506,6 +575,7 @@
    "lead_days": 13,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -516,6 +586,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.9,
    "H": 1.0,
@@ -530,9 +601,12 @@
     "booked_share": 0.20588235294117646,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 14
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -542,6 +616,7 @@
    "lead_days": 14,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -552,6 +627,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.018,
    "W": 0.88,
    "H": 1.0,
@@ -566,9 +642,12 @@
     "booked_share": 0.14705882352941177,
     "p20": 2500000,
     "p50": 3000000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 15
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -578,6 +657,7 @@
    "lead_days": 15,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -588,6 +668,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.05,
    "H": 1.0,
@@ -602,9 +683,12 @@
     "booked_share": 0.17647058823529413,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 16
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -614,6 +698,7 @@
    "lead_days": 16,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -624,13 +709,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.37,
    "di": 69.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.449,
    "price": 3480000,
    "rival": {
@@ -638,9 +724,12 @@
     "booked_share": 0.14705882352941177,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 17
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -650,6 +739,7 @@
    "lead_days": 17,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -660,6 +750,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.12,
    "H": 1.0,
@@ -674,9 +765,12 @@
     "booked_share": 0.14705882352941177,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 18
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -686,6 +780,7 @@
    "lead_days": 18,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -696,13 +791,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -710,9 +806,12 @@
     "booked_share": 0.08823529411764706,
     "p20": 1800000,
     "p50": 2000000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 19
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -722,6 +821,7 @@
    "lead_days": 19,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -732,13 +832,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -746,9 +847,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2000000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 20
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -758,6 +862,7 @@
    "lead_days": 20,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -768,13 +873,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -782,9 +888,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2000000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 21
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -794,6 +903,7 @@
    "lead_days": 21,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -804,6 +914,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.88,
    "H": 1.0,
@@ -818,9 +929,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2000000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 22
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -830,6 +944,7 @@
    "lead_days": 22,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -840,6 +955,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.05,
    "H": 1.0,
@@ -854,9 +970,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 23
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -866,6 +985,7 @@
    "lead_days": 23,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -876,13 +996,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.37,
    "di": 69.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.449,
    "price": 3480000,
    "rival": {
@@ -890,9 +1011,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 24
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -902,6 +1026,7 @@
    "lead_days": 24,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -912,6 +1037,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.12,
    "H": 1.0,
@@ -926,9 +1052,12 @@
     "booked_share": 0.08823529411764706,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 25
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -938,6 +1067,7 @@
    "lead_days": 25,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -948,13 +1078,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -962,9 +1093,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 26
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -974,6 +1108,7 @@
    "lead_days": 26,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -984,13 +1119,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -998,9 +1134,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 27
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1010,6 +1149,7 @@
    "lead_days": 27,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1020,13 +1160,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1034,9 +1175,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 28
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1046,6 +1190,7 @@
    "lead_days": 28,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1056,6 +1201,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.88,
    "H": 1.0,
@@ -1070,9 +1216,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 29
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1082,6 +1231,7 @@
    "lead_days": 29,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1092,6 +1242,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.05,
    "H": 1.0,
@@ -1106,9 +1257,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 30
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1118,6 +1272,7 @@
    "lead_days": 30,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1128,13 +1283,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.37,
    "di": 69.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.449,
    "price": 3480000,
    "rival": {
@@ -1142,9 +1298,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 31
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1154,6 +1313,7 @@
    "lead_days": 31,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1164,6 +1324,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.12,
    "H": 1.0,
@@ -1178,9 +1339,12 @@
     "booked_share": 0.0,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 32
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1190,6 +1354,7 @@
    "lead_days": 32,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1200,13 +1365,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1214,9 +1380,12 @@
     "booked_share": 0.0,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 33
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1226,6 +1395,7 @@
    "lead_days": 33,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1236,13 +1406,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1250,9 +1421,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 34
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1262,6 +1436,7 @@
    "lead_days": 34,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1272,13 +1447,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1286,9 +1462,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 35
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1298,6 +1477,7 @@
    "lead_days": 35,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1308,6 +1488,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.88,
    "H": 1.0,
@@ -1322,9 +1503,12 @@
     "booked_share": 0.029411764705882353,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 36
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1334,6 +1518,7 @@
    "lead_days": 36,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1344,6 +1529,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.05,
    "H": 1.0,
@@ -1358,9 +1544,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 37
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1370,6 +1559,7 @@
    "lead_days": 37,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1380,13 +1570,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.37,
    "di": 69.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.449,
    "price": 3480000,
    "rival": {
@@ -1394,9 +1585,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 38
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1406,6 +1600,7 @@
    "lead_days": 38,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1416,6 +1611,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.12,
    "H": 1.0,
@@ -1430,9 +1626,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 39
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1442,6 +1641,7 @@
    "lead_days": 39,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1452,13 +1652,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1466,9 +1667,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 40
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1478,6 +1682,7 @@
    "lead_days": 40,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1488,13 +1693,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1502,9 +1708,12 @@
     "booked_share": 0.058823529411764705,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 41
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1514,6 +1723,7 @@
    "lead_days": 41,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1524,13 +1734,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.9,
    "H": 1.0,
    "R": 1.0,
    "mdf": 0.949,
    "di": 41.4,
-   "class_": "Normal",
+   "class_": "High",
    "multiplier": 1.075,
    "price": 2580000,
    "rival": {
@@ -1538,9 +1749,12 @@
     "booked_share": 0.0,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 42
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1550,6 +1764,7 @@
    "lead_days": 42,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1560,6 +1775,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 0.88,
    "H": 1.0,
@@ -1574,9 +1790,12 @@
     "booked_share": 0.0,
     "p20": 1800000,
     "p50": 2500000,
-    "p85": 5300000
+    "p85": 5300000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 43
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1586,6 +1805,7 @@
    "lead_days": 43,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1596,6 +1816,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.05,
    "H": 1.0,
@@ -1610,9 +1831,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 44
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1622,6 +1846,7 @@
    "lead_days": 44,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.0
   },
   {
@@ -1632,13 +1857,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.054,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.37,
    "di": 69.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.449,
    "price": 4176000,
    "rival": {
@@ -1646,9 +1872,12 @@
     "booked_share": 0.0,
     "p20": 2500000,
     "p50": 3500000,
-    "p85": 6500000
+    "p85": 6500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 45
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1658,6 +1887,7 @@
    "lead_days": 45,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1668,6 +1898,7 @@
    "is_holiday": true,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": true,
    "S": 1.239,
    "W": 1.12,
    "H": 1.8,
@@ -1682,9 +1913,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 46
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1694,6 +1928,7 @@
    "lead_days": 46,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1704,6 +1939,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -1718,9 +1954,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 47
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1730,6 +1969,7 @@
    "lead_days": 47,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1740,6 +1980,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -1754,9 +1995,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 48
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1766,6 +2010,7 @@
    "lead_days": 48,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1776,6 +2021,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -1790,9 +2036,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 49
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1802,6 +2051,7 @@
    "lead_days": 49,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1812,6 +2062,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.88,
    "H": 1.0,
@@ -1826,9 +2077,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 50
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1838,6 +2092,7 @@
    "lead_days": 50,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1848,13 +2103,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.301,
    "di": 65.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.36,
    "price": 3912000,
    "rival": {
@@ -1862,9 +2118,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 51
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1873,7 +2132,8 @@
    "own_booked": false,
    "lead_days": 51,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1884,13 +2144,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.611,
    "di": 81.7,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.725,
    "price": 4968000,
    "rival": {
@@ -1898,9 +2159,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 52
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1910,6 +2174,7 @@
    "lead_days": 52,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1920,13 +2185,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.12,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.388,
    "di": 70.3,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.47,
    "price": 4236000,
    "rival": {
@@ -1934,9 +2200,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 53
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1946,6 +2215,7 @@
    "lead_days": 53,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1956,6 +2226,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -1970,9 +2241,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 54
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -1982,6 +2256,7 @@
    "lead_days": 54,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -1992,6 +2267,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2006,9 +2282,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 55
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2018,6 +2297,7 @@
    "lead_days": 55,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2028,6 +2308,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2042,9 +2323,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 56
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2054,6 +2338,7 @@
    "lead_days": 56,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2064,6 +2349,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.88,
    "H": 1.0,
@@ -2078,9 +2364,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 57
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2090,6 +2379,7 @@
    "lead_days": 57,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2100,13 +2390,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.301,
    "di": 65.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.36,
    "price": 3912000,
    "rival": {
@@ -2114,9 +2405,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 58
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2125,7 +2419,8 @@
    "own_booked": false,
    "lead_days": 58,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2136,13 +2431,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.611,
    "di": 81.7,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.725,
    "price": 4968000,
    "rival": {
@@ -2150,9 +2446,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 59
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2162,6 +2461,7 @@
    "lead_days": 59,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2172,13 +2472,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.12,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.388,
    "di": 70.3,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.47,
    "price": 4236000,
    "rival": {
@@ -2186,9 +2487,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 60
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2198,6 +2502,7 @@
    "lead_days": 60,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2208,6 +2513,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2222,9 +2528,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 61
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2234,6 +2543,7 @@
    "lead_days": 61,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2244,6 +2554,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2258,9 +2569,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 62
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2270,6 +2584,7 @@
    "lead_days": 62,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2280,6 +2595,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2294,9 +2610,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 63
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2306,6 +2625,7 @@
    "lead_days": 63,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2316,6 +2636,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.88,
    "H": 1.0,
@@ -2330,9 +2651,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 64
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2342,6 +2666,7 @@
    "lead_days": 64,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2352,13 +2677,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.301,
    "di": 65.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.36,
    "price": 3912000,
    "rival": {
@@ -2366,9 +2692,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 65
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2377,7 +2706,8 @@
    "own_booked": false,
    "lead_days": 65,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2388,13 +2718,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.611,
    "di": 81.7,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.725,
    "price": 4968000,
    "rival": {
@@ -2402,9 +2733,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 66
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2414,6 +2748,7 @@
    "lead_days": 66,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2424,6 +2759,7 @@
    "is_holiday": true,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": true,
    "S": 1.239,
    "W": 1.12,
    "H": 1.8,
@@ -2438,9 +2774,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 67
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2450,6 +2789,7 @@
    "lead_days": 67,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2460,6 +2800,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2474,9 +2815,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 68
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2486,6 +2830,7 @@
    "lead_days": 68,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2496,6 +2841,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2510,9 +2856,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 69
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2522,6 +2871,7 @@
    "lead_days": 69,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2532,6 +2882,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2546,9 +2897,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 70
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2558,6 +2912,7 @@
    "lead_days": 70,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2568,6 +2923,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.88,
    "H": 1.0,
@@ -2582,9 +2938,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 71
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2594,6 +2953,7 @@
    "lead_days": 71,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2604,13 +2964,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.301,
    "di": 65.4,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.36,
    "price": 3912000,
    "rival": {
@@ -2618,9 +2979,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 72
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2629,7 +2993,8 @@
    "own_booked": false,
    "lead_days": 72,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2640,13 +3005,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.611,
    "di": 81.7,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.725,
    "price": 4968000,
    "rival": {
@@ -2654,9 +3020,12 @@
     "booked_share": 0.0,
     "p20": 2290000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 73
    },
-   "class_q": "Super-Peak",
+   "rank_badge": "top 5%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2666,6 +3035,7 @@
    "lead_days": 73,
    "is_orphan": false,
    "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2676,13 +3046,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.239,
    "W": 1.12,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.388,
    "di": 70.3,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.47,
    "price": 4236000,
    "rival": {
@@ -2690,9 +3061,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 74
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2702,6 +3076,7 @@
    "lead_days": 74,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2712,6 +3087,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.239,
    "W": 0.9,
    "H": 1.0,
@@ -2726,9 +3102,12 @@
     "booked_share": 0.0,
     "p20": 2000000,
     "p50": 2500000,
-    "p85": 4000000
+    "p85": 4000000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 75
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2738,6 +3117,7 @@
    "lead_days": 75,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2748,6 +3128,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -2762,9 +3143,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 76
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2774,6 +3158,7 @@
    "lead_days": 76,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2784,6 +3169,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -2798,9 +3184,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 77
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2810,6 +3199,7 @@
    "lead_days": 77,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2820,6 +3210,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.88,
    "H": 1.0,
@@ -2834,9 +3225,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 78
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2846,6 +3240,7 @@
    "lead_days": 78,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2856,13 +3251,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.281,
    "di": 64.3,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.341,
    "price": 3864000,
    "rival": {
@@ -2870,9 +3266,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 79
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2881,7 +3280,8 @@
    "own_booked": false,
    "lead_days": 79,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2892,13 +3292,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.586,
    "di": 80.5,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.699,
    "price": 4896000,
    "rival": {
@@ -2906,9 +3307,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1700000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 80
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2917,7 +3321,8 @@
    "own_booked": false,
    "lead_days": 80,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2928,13 +3333,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.12,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.366,
    "di": 69.2,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.444,
    "price": 4164000,
    "rival": {
@@ -2942,9 +3348,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 81
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2954,6 +3363,7 @@
    "lead_days": 81,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -2964,6 +3374,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -2978,9 +3389,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 82
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -2990,6 +3404,7 @@
    "lead_days": 82,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3000,6 +3415,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -3014,9 +3430,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 83
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3026,6 +3445,7 @@
    "lead_days": 83,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3036,6 +3456,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -3050,9 +3471,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 84
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3062,6 +3486,7 @@
    "lead_days": 84,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3072,6 +3497,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.88,
    "H": 1.0,
@@ -3086,9 +3512,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 85
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3098,6 +3527,7 @@
    "lead_days": 85,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3108,13 +3538,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.05,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.281,
    "di": 64.3,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.341,
    "price": 3864000,
    "rival": {
@@ -3122,9 +3553,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 86
    },
-   "class_q": "High",
+   "rank_badge": "top 50%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3133,7 +3567,8 @@
    "own_booked": false,
    "lead_days": 86,
    "is_orphan": false,
-   "min_stay": 1,
+   "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3144,13 +3579,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.3,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.586,
    "di": 80.5,
-   "class_": "Peak",
+   "class_": "Super-Peak",
    "multiplier": 1.699,
    "price": 4896000,
    "rival": {
@@ -3158,9 +3594,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1700000,
     "p50": 3500000,
-    "p85": 5500000
+    "p85": 5500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 87
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3169,7 +3608,8 @@
    "own_booked": false,
    "lead_days": 87,
    "is_orphan": false,
-   "min_stay": 2,
+   "min_stay": 3,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3180,13 +3620,14 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": true,
+   "important_holiday": false,
    "S": 1.22,
    "W": 1.12,
    "H": 1.0,
    "R": 1.0,
    "mdf": 1.366,
    "di": 69.2,
-   "class_": "High",
+   "class_": "Peak",
    "multiplier": 1.444,
    "price": 4164000,
    "rival": {
@@ -3194,9 +3635,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 88
    },
-   "class_q": "Peak",
+   "rank_badge": "top 20%",
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3206,6 +3650,7 @@
    "lead_days": 88,
    "is_orphan": false,
    "min_stay": 2,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   },
   {
@@ -3216,6 +3661,7 @@
    "is_holiday": false,
    "is_bridge": false,
    "is_weekend": false,
+   "important_holiday": false,
    "S": 1.22,
    "W": 0.9,
    "H": 1.0,
@@ -3230,9 +3676,12 @@
     "booked_share": 0.047619047619047616,
     "p20": 1500000,
     "p50": 2500000,
-    "p85": 4500000
+    "p85": 4500000,
+    "state": "ok",
+    "coverage": 1.0,
+    "lead": 89
    },
-   "class_q": "Normal",
+   "rank_badge": null,
    "qcut": {
     "p50": 53.1,
     "p80": 66.7,
@@ -3242,6 +3691,7 @@
    "lead_days": 89,
    "is_orphan": false,
    "min_stay": 1,
+   "rival_state": "ok",
    "ladder_mult": 1.2
   }
  ]

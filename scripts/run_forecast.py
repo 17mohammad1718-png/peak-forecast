@@ -44,7 +44,7 @@ def main():
     os.makedirs(dest, exist_ok=True)
     json.dump(out, open(os.path.join(dest, "latest.json"), "w",
                         encoding="utf-8"), ensure_ascii=False, indent=1)
-    peaks = [o for o in rows if o["class_q"] == "Super-Peak"][:6]
+    peaks = [o for o in rows if o["class_"] == "Super-Peak"][:6]
     print(f"forecast written: {len(rows)} nights")
     for p in peaks:
         print(f"  peak {p['date']} ({p['dow']}) DI={p['di']} "

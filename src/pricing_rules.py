@@ -9,9 +9,14 @@ LADDER = [            # (max_lead_inclusive, multiplier)
     (13, 1.00), (44, 1.00), (999, 1.20)      # far-out premium L>45
 ]
 
-def ladder_multiplier(lead_days: int, di: float) -> float:
+def ladder_multiplier(lead_days: int, di: float, informed: bool = True) -> float:
+    """Far-out premium (+20%) ONLY on informative nights (rival calendars
+    open). Unknown-horizon ordinary nights get neutral 1.00 (missing info is
+    not premium evidence). Peak-freeze always enforced."""
     if di >= 75:                              # never discount a peak early
         return 1.00 if lead_days <= 44 else 1.20
+    if lead_days > 44:
+        return 1.20 if informed else 1.00
     for cap, m in LADDER:
         if lead_days <= cap:
             return m
@@ -28,22 +33,36 @@ def apply_rules(nights: list, today=None) -> list:
         next_b = nights[i + 1]["own_booked"] if i < n - 1 else True
         o["is_orphan"] = (not o.get("own_booked")) and prev_b and next_b
         o.setdefault("min_stay", 1)
-        if o.get("class_q") == "Super-Peak" or (
+        if o.get("class_") == "Super-Peak" or (
                 o.get("is_holiday") and o.get("is_bridge")):
             o["min_stay"] = 3
-        elif o.get("class_q") == "Peak" or (
+        elif o.get("class_") == "Peak" or (
                 o.get("is_weekend") and o.get("is_holiday")):
             o["min_stay"] = 2
     for o in nights:
         lead = (_date.fromisoformat(o["date"]) - today).days
         o["lead_days"] = max(0, lead)
-        lm = ladder_multiplier(o["lead_days"], o["di"])
+        informed = o.get("rival", {}).get("state") == "ok"
+        o["rival_state"] = o.get("rival", {}).get("state", "unknown")
+        lm = ladder_multiplier(o["lead_days"], o["di"], informed=informed)
         o["ladder_mult"] = lm
         o["price"] = int(round(o["price"] * lm, -3))
         if o["is_orphan"]:
             o["price"] = int(round(o["price"] * 0.75, -3))
             o["max_stay"] = 1
             o["note"] = "orphan-fill"
+        # v1.1: enforce economic floor AFTER all modifiers
+        from .floor import gross_floor
+        f = gross_floor(max(1, o.get("min_stay", 1)))
+        if o["price"] < f:
+            o["price"] = f
+            o["floor_enforced"] = True
+        if (o.get("rival", {}).get("state") == "ok"
+                and o.get("rival", {}).get("p85")):
+            if f > o["rival"]["p85"] * 1.047619:
+                o["infeasible"] = True
+                o["note"] = (o.get("note", "") +
+                             " | کف اقتصادی > سقف رقیب").strip(" |")
     return nights
 
 def fit_ladder_from_cdf(lead_cdf):

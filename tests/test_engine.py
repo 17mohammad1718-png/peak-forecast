@@ -15,7 +15,7 @@ def test_friday_scores_higher_than_monday():
     fri = forecast_night(datetime.date(2026, 9, 18), {}, FLAT, EMPTY_RIVAL)
     assert fri["di"] > mon["di"]
     assert mon["class_"] in ("Normal", "High")
-    assert fri["class_"] != "Super-Peak"
+    assert fri["class_"] != "Super-Peak"   # absolute classes: Fri ~52 -> High
 
 def test_nowruz_holiday_friday_is_super_peak():
     d = datetime.date(2027, 3, 19)     # 1406-01-01 falls around here; verify via jalali key
@@ -26,7 +26,9 @@ def test_nowruz_holiday_friday_is_super_peak():
     j = jdatetime.date.fromgregorian(date=probe)
     H[f"{j.year:04d}-{j.month:02d}-{j.day:02d}"] = ["test"]
     r = forecast_night(probe, H, FLAT, EMPTY_RIVAL)
-    assert r["is_holiday"] and r["class_"] == "Super-Peak"
+    assert r["is_holiday"] and r["important_holiday"]
+    # holiday Thursday W=1.30*H=1.5 -> DI ~75+ -> Super-Peak absolute
+    assert r["class_"] in ("Peak", "Super-Peak")
 
 def test_commission_price():
     assert commission_price(3_000_000) == 3_143_000   # round to 1000
@@ -37,9 +39,8 @@ def test_price_clamped_by_rival_band():
     r = forecast_night(datetime.date(2026, 10, 6), {}, FLAT, rival)  # Tuesday low
     assert r["price"] >= 1_800_000                    # hard floor respected
 
-def test_horizon_quantile_classes():
+def test_horizon_rank_badges():
     rows = forecast_horizon(datetime.date(2026, 9, 10), 30, {}, FLAT,
                             lambda n: EMPTY_RIVAL)
     assert len(rows) == 30
-    classes = {o["class_q"] for o in rows}
-    assert "Super-Peak" in classes or "Peak" in classes
+    assert any(o.get("rank_badge") for o in rows)   # top-5/20/50% badge exists

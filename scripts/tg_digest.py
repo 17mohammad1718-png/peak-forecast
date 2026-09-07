@@ -16,12 +16,15 @@ FORECAST_DIR = os.path.join(config.DATA, "forecast")
 PROXIES = ["http://127.0.0.1:18080", "http://127.0.0.1:10808"]
 
 def _bot_token():
-    # resolve from hermes .env files without printing it
+    """Resolve bot token from hermes .env files; never print it."""
     import re
-    for p in [os.path.expanduser(r"~/AppData/Local/hermes/profiles/smart/.env"),
-              os.path.expanduser(r"~/AppData/Local/hermes/.env")]:
+    pat = re.compile(
+        r"^TELEGRAM_BOT_TOKEN\s*=\s*['\"]?([0-9]+:[A-Za-z0-9_\-]{20,})['\"]?\s*$",
+        re.M)
+    for p in [os.path.expanduser(r"~/AppData/Local/hermes/.env"),
+              os.path.expanduser(r"~/AppData/Local/hermes/profiles/smart/.env")]:
         if os.path.exists(p):
-            m = re.search(r"TELEGRAM_BOT_TOKEN\s*=\s*(\S+)", open(p, encoding="utf-8").read())
+            m = pat.search(open(p, encoding="utf-8").read())
             if m:
                 return m.group(1)
     return None

@@ -67,7 +67,7 @@ def build_year(jy):
         t, dt, bi = day_tier(d, holidays, rs)
         out.append({
             "date": d.isoformat(), "jalali": dt["jalali"],
-            "dow": dt["dow"], "jmonth": dt["jmonth"],
+            "jyear": jy, "dow": dt["dow"], "jmonth": dt["jmonth"],
             "tier": round(t), "is_holiday": dt["is_holiday"],
             "is_bridge": bi["is_bridge"], "is_weekend": dt["is_weekend"],
             "rival_share": round(rs * 100) if rs is not None else None,

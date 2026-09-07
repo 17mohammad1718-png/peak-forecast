@@ -115,6 +115,13 @@ tr.peak .price { color:var(--gold); } tr.super .price { color:var(--red); }
 .hmT td { padding:4px 6px; border-bottom:1px solid var(--border); text-align:center; }
 .hmT tbody tr:hover { background:#ffffff06; }
 .hmT .cell { display:inline-block; min-width:58px; cursor:default; }
+.mcell { display:flex; flex-direction:column; align-items:center; gap:2px;
+  padding:10px 8px; border-radius:10px; }
+.mcell .tname { font-size:10px; opacity:.92; }
+.mhead { display:flex; justify-content:space-between; align-items:center;
+  gap:8px; padding:10px 12px; border-radius:10px; min-width:110px;
+  color:#0b0f14; font-weight:bold; }
+.mhead .muted { color:#0b0f14; opacity:.75; font-size:10.5px; font-weight:normal; }
 .legend2 { display:flex; gap:16px; flex-wrap:wrap; margin-top:10px; align-items:center; }
 .lg-bar { width:160px; height:10px; border-radius:5px;
   background:linear-gradient(90deg,#1a2332,#1d4d7c,#2e8bc0,#e3b341,#f85149); }
@@ -209,33 +216,97 @@ function renderMonthly(root, rows, year){
 }
 document.getElementById("gen").textContent = DATA.latest.generated_at.slice(0,10);
 
-/* ================= TAB: YEAR HEATMAP ================= */
-let hmYear = "1405", hmMode = "daily";
+/* ================= TAB: YEAR HEATMAP (rolling 12 months) ================= */
+let hmMode = "daily";   // no year switch: always the NEXT 12 months (rolling)
+function tierColor(t){
+  const stops = ["#1a2332","#1d4d7c","#2e8bc0","#e3b341","#f85149"];
+  const th = [25,50,72,88];
+  if (t<=th[0]) return stops[0]; if (t<=th[1]) return stops[1];
+  if (t<=th[2]) return stops[2]; if (t<=th[3]) return stops[3]; return stops[4];
+}
+function fgColor(t){ return t>=72?"#0b0f14":"#c9d4e0"; }
+function rollingWindow(){
+  /* Union of yearmap rows inside [today, today+365d]. Rows come from 1405+1406. */
+  const today = new Date(); today.setHours(0,0,0,0);
+  const end = new Date(today.getTime()+365*24*3600*1000);
+  const out = [];
+  for (const y of Object.keys(YM).sort()){
+    for (const r of (YM[y]||[])){
+      const d = new Date(r.date+"T00:00:00");
+      if (d>=today && d<=end) out.push(r);
+    }
+  }
+  out.sort((a,b)=>a.date<b.date?-1:1);
+  return out;
+}
+function renderMonthly(root, rows){
+  const DOWS = ["Sat","Sun","Mon","Tue","Wed","Thu","Fri"];
+  const DOW_FA = {"Sat":"شنبه","Sun":"یکشنبه","Mon":"دوشنبه","Tue":"سه‌شنبه",
+                  "Wed":"چهارشنبه","Thu":"پنجشنبه","Fri":"جمعه"};
+  const agg = {};
+  rows.forEach(r=>{
+    const k = r.jyear+"-"+r.jmonth+"-"+r.dow;
+    (agg[k]=agg[k]||[]).push(r.tier);
+  });
+  const avg = arr => Math.round(arr.reduce((s,x)=>s+x,0)/arr.length);
+  // month order present in window (e.g. 1405-08 .. 1406-07)
+  const months = [];
+  rows.forEach(r=>{
+    const k = r.jyear+"-"+String(r.jmonth).padStart(2,"0");
+    if (!months.includes(k)) months.push(k);
+  });
+  let h = `<div style="overflow:auto"><table class="hmT"><thead><tr>
+    <th style="min-width:110px">ماه</th>`;
+  for (const d of DOWS) h += `<th>${DOW_FA[d]}</th>`;
+  h += `<th>میانگین</th></tr></thead><tbody>`;
+  for (const mk of months){
+    const [jy, jm] = mk.split("-").map(Number);
+    const rowCells = DOWS.map(d=>{
+      const a = agg[jy+"-"+jm+"-"+d];
+      if (!a) return `<td><span class="muted">—</span></td>`;
+      const t = avg(a);
+      return `<td><div class="cell mcell" data-tip="${JM[jm-1]} ${jy} · ${DOW_FA[d]} | شدت: ${t}"
+        style="background:linear-gradient(135deg, ${tierColor(t)}cc, ${tierColor(t)}), ${tierColor(t)}">
+        <span class="tname">${JM[jm-1]}</span>
+        <b class="en">${t}</b></div></td>`;
+    }).join("");
+    const monthVals = [];
+    for (const d of DOWS){ const a = agg[jy+"-"+jm+"-"+d]; if(a) monthVals.push(avg(a)); }
+    const mt = monthVals.length?avg(monthVals):0;
+    h += `<tr><td><div class="mhead" style="background:linear-gradient(135deg, ${tierColor(mt)}cc, ${tierColor(mt)})">
+      <span>${JM[jm-1]} <span class="en muted">${jy}</span></span>
+      <b class="en">${mt}</b></div></td>${rowCells}
+      <td class="en muted" style="font-size:11px">ↆ</td></tr>`;
+  }
+  h += `</tbody></table></div>
+    <div class="legend2"><span class="muted">کم</span>
+    <div class="lg-bar"></div><span class="muted">پیک</span>
+    <span class="muted" style="margin-inline-start:14px">هر سلول: نام ماه + امتیاز میانگین · ۱۲ ماه آینده</span></div>`;
+  root.innerHTML = h;
+}
 (function(){
   const root = document.getElementById("tab-hm");
   function render(){
-    const rows = YM[hmYear]||[];
+    const rows = rollingWindow();
     const byM = {};
-    rows.forEach(r=>{ (byM[r.jmonth]=byM[r.jmonth]||[]).push(r); });
+    rows.forEach(r=>{ (byM[r.jyear+"-"+r.jmonth]=byM[r.jmonth]||[]).push(r); });
     let h = `<div class="card">
-      <h3><span class="dot"></span>هیت‌مپ تقاضای سال ${hmYear} — ۳۶۵ روز
+      <h3><span class="dot"></span>هیت‌مپ تقاضا — ۱۲ ماه آینده
       <span class="muted" style="margin-inline-start:auto">
       چشمک ◆ = شب‌هایی که رزرو واقعی رقبا ثبت شده</span></h3>
-      <div class="hm-year">`;
-    for (const y of Object.keys(YM).sort())
-      h += `<button class="${y==hmYear?"active":""}" data-y="${y}">سال ${y}</button>`;
-    h += `<button class="${hmMode=="daily"?"active":""}" data-m="daily">روزانه</button>`;
-    h += `<button class="${hmMode=="monthly"?"active":""}" data-m="monthly">ماهانه (روز هفته)</button>`;
-    h += `</div>`;
+      <div class="hm-year">
+      <button class="${hmMode=="daily"?"active":""}" data-m="daily">روزانه</button>
+      <button class="${hmMode=="monthly"?"active":""}" data-m="monthly">ماهانه (روز هفته)</button>
+      </div>`;
     if (hmMode === "monthly"){
-      renderMonthly(root, rows, hmYear);
+      renderMonthly(root, rows);
       return;
     }
     h += `<div style="overflow:auto"><div class="hm">`;
-    for (const m of Object.keys(byM).sort((a,b)=>a-b)){
-      h += `<div class="monthlabel">${JM[m-1]} ${hmYear}</div>`;
+    let lastKey = "";
+    for (const m of Object.keys(byM).sort()){
+      h += `<div class="monthlabel">${m.replace("-", " · ")}</div>`;
       const cells = byM[m];
-      // first row pad by dow of first day
       const padMap = {"Sat":0,"Sun":1,"Mon":2,"Tue":3,"Wed":4,"Thu":5,"Fri":6};
       for (let i=0;i<padMap[cells[0].dow];i++) h += `<div></div>`;
       for (const c of cells){
@@ -257,16 +328,13 @@ let hmYear = "1405", hmMode = "daily";
     root.innerHTML = h;
     root.querySelectorAll(".hm-year button").forEach(b=>{
       b.onclick = ()=>{
-        if (b.dataset.y) hmYear = b.dataset.y;
         if (b.dataset.m) hmMode = b.dataset.m;
         render();
       };
     });
   }
   render();
-  window.__hmRender = render;
 })();
-
 /* tooltip */
 const tip = document.getElementById("tip");
 document.addEventListener("mousemove", e=>{

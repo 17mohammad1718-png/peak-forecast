@@ -1,0 +1,192 @@
+PEAK-FORECAST CONSULT BRIEF — for external AI review
+Prepared by Hermes (orchestrator agent) — 2026-09-07 — v1
+=======================================================
+
+YOUR ROLE
+---------
+You are a senior revenue-management scientist and demand-forecasting engineer.
+A solo vacation-rental host asks you to review his forecasting project plan,
+critique it, and propose concrete improvements. All constraints in Section 3
+are FIXED — do not propose solutions that need data we cannot get. Be blunt,
+specific, and practical. Formulas and Python pseudo-code are welcome.
+Mark every suggestion as [proven] / [likely] / [speculative].
+
+
+1. THE BUSINESS
+---------------
+- Solo host, ONE Swiss-style cabin. Village: Seyyed Kola, Babolkenar district,
+  Mazandaran, Iran (Caspian forest region, ~3h drive from Tehran).
+- Listed on Jajiga.com (Iranian Airbnb-like OTA). Listing ID 3297585.
+- Current base price: 2,400,000 toman/night (~$28 at free-market rate).
+- OTA commission: 16% on our cabin; the 34 tracked competitors are at 12%.
+- Iranian demand specifics that matter:
+  * Weekend = Thursday + Friday. Friday night is the weekly peak.
+  * Solar Hijri (Jalali) calendar; lunar religious holidays shift ~11 days
+    earlier every Gregorian year (Eid al-Fitr, Eid al-Adha, Ghadir, Muharram...).
+  * Official holidays often create bridge long weekends (mid-week holidays
+    get "bridged" into 4-5 day trips).
+  * Seasonality: Nowruz (Mar 20 - Apr 2) = absolute national peak; summer
+    Jun-Sep = Tehran residents flee heat to the Caspian coast; a second
+    autumn wave Sep-Nov ("fall-leaf tourism"); winter = deep low except ski.
+  * Booking lead times are SHORT (1-5 days) for normal weekends; longer only
+    for Nowruz and peak summer holidays.
+
+
+2. THE GOAL
+-----------
+Build a LOCAL forecaster (runs on a Windows laptop, Python, cron, no paid API):
+  1) For each of the next 90 nights: a demand score 0-100 with peak labeling
+     (normal / high / peak / super-peak) + a suggested nightly price.
+  2) A whole-year seasonality view (which months/weeks are hot in our area).
+  3) A competitor comparison tab (34 rivals).
+  4) Daily auto-update; delta-only Telegram digest.
+Phase discipline: v1 MUST be transparent rule-based (explainable to the host).
+ML models are allowed only after >= 6 months of accumulated history.
+
+
+3. VERIFIED DATA ASSETS (all local files, all free, all real)
+-------------------------------------------------------------
+a) 35 live calendars (our cabin + 34 rivals) via public JSON API
+   https://api.jajiga.com/api/nights?room_id=X — fields per night:
+   date, price, is_instant, is_weekend, is_unavailable (booked), discount.
+   Horizon: 77-107 nights ahead. Refreshed daily by an existing cron job,
+   with a polite 2-4s delay between rooms.
+
+b) radar_history.db (SQLite): one snapshot ingested per day since 2026-08-08
+   (29 days so far). Table days(room_id, date, status booked/free, price,
+   discount, is_peak, is_holiday, is_weekend, first_seen, last_seen),
+   PRIMARY KEY (room_id, date), UPSERT-never-delete.
+   KEY: first_seen = the first date a given future night was observed BOOKED
+   -> this is a real booking-curve / pickup signal, currently 4,053 rows
+   over 35 rooms, observed dates 2026-08-08 .. 2026-12-21.
+
+c) Reviews corpus: 62,293 reviews (2018-2026). Babolkenar subset =
+   7,646 reviews across 116 properties, 2019-07 .. 2026-08.
+   Monthly averages (2022-2025 only, Gregorian months, reviews/year):
+     Jan 53.2, Feb 52.8, Mar 77.2, Apr 96.5, May 127.8, Jun 112.8,
+     Jul 132.5, Aug 160.0, Sep 192.0, Oct 165.0, Nov 141.5, Dec 112.5
+   -> ~3.6x seasonal swing. Hottest weeks-of-year: weeks 33-40 (mid-Aug to
+   early-Oct), plus week 27 (early Jul), week 21 (late May), weeks 43-44 (Nov).
+   Caveats: review date ~= stay date (unknown lag); number of active listings
+   grew over the years (raw counts biased upward in recent years).
+
+d) persian_holiday.db (open-source, time.ir-mined): official Jalali holidays
+   and events 1370-1420. Verified: year 1405 = 34 unique holiday dates,
+   including the shifting lunar Eids. Local SQLite, free.
+
+e) pricing-dataset.json: 100 cabins across the 4 nearby villages
+   (Seyyed Kola, Guneh Kola, Ghaan Talar, Shirdarkola) with min_price,
+   occupancy_30 (booked nights in next 30 days), pool/jacuzzi flags.
+
+f) Our own bookings: 35 bookings through Jalali 1405/06/23 (net 137,791,000
+   toman), currently in browser localStorage (exportable to JSON once).
+
+g) 22 supply-census snapshots since 2026-08-01 (~500 active listings in the
+   Babolkenar search area each day) — tells us WHEN each listing appeared.
+
+NOT available (and cannot be scraped): search/query volumes, page views,
+unlogged demand, competitor revenue, historical weather (could fetch free
+APIs going forward), local event calendars (manual entry possible).
+
+
+4. OUR IDEA MENU (v0 draft — critique this)
+-------------------------------------------
+A) Demand Index (core, rule-based):
+   DI(D) = w1*official_holiday(D) + w2*weekend(D) + w3*seasonality(month of D,
+   from review curve) + w4*rival_signal(D). Map 0-100 to classes
+   normal/high/peak/super-peak. Price(D) = base_price * multiplier(DI),
+   clamped by floor/ceiling derived from rival price distribution.
+
+B) Booking-curve / pace layer (from first_seen):
+   For each future night D and lead L = D - today, compare rivals' current
+   booked-share with the booked-share observed at the same lead in past
+   snapshots -> pace ratio. Positive pace = hot night early -> raise price
+   sooner. Cold-start problem: only 29 days of history. Plan: pool all 34
+   rivals (34x data) + empirical-Bayes shrinkage toward the average curve.
+
+C) Year-view seasonality from 7,646 reviews + 1405/1406 holiday overlay.
+
+D) Rival price-signal: rivals raising price or minimum-stay for night D is
+   a demand proxy; price changes are already tracked in history DB.
+
+E) Pro rulebook (copied from commercial tools):
+   * Lead-time ladder: still-free nights get discounts at L=7/3/1 days;
+     hot far-out nights get a premium.
+   * Dynamic minimum stay: peak holiday weekends -> 2-3 night minimum.
+   * Orphan-night rule: single free night sandwiched between bookings ->
+     special fill-it price.
+   * Absolute floor (cost-based) and ceiling (highest comparable rival).
+
+F) Forecast-vs-actual tracker: every night, log what v1 predicted 30/14/7
+   days earlier for the nights that just elapsed vs what actually happened
+   (own occupancy + rivals). Show MAE honestly on the dashboard.
+
+G) (Later, >=6 months data) gradient-boosting / regression on the features
+   above. Explicitly out of scope for v1.
+
+
+5. QUESTIONS — answer by number, be concrete
+--------------------------------------------
+1. MISSING SIGNALS: What demand signals are we missing that are obtainable
+   WITHOUT new scraping? Consider and rank by impact/effort: free weather
+   forecast APIs, school/exam calendars, Tehran-side triggers (heat waves,
+   long-weekend bridge announcements), road/traffic factors, Ramadan and
+   Muharram effects on Caspian travel, anything else specific to northern
+   Iran domestic tourism.
+
+2. DI WEIGHTS: Propose concrete starting weights (w1..w4, sum=1) for v1 and
+   a self-tuning scheme to adjust them later from realized data. Should the
+   model be additive (weights sum) or multiplicative (each factor a
+   multiplier)? Defend with one sentence each.
+
+3. PACE COLD-START: With only 29 days of booking-curve history but 34
+   rivals, what is the best small-sample technique to make the pace layer
+   usable NOW? (Pooling across rooms? Empirical Bayes? Parametric booking
+   curves from hotel RM literature?) Give the actual recipe.
+
+4. REVIEW-BASED SEASONALITY: What is the best normalization for supply
+   growth (listings added over years) and review lag? Is month-level
+   resolution enough for a year-view, or is extracting stay-length hints
+   from review text (e.g. Persian phrases like "دو شب اقامت") worth the
+   parsing effort?
+
+5. PRICE MULTIPLIER: Step function vs continuous curve for DI->price?
+   How to set floor/ceiling robustly from 34 rivals (median? trimmed mean?
+   percentile band?) — noting rivals sit at 12% commission while we pay 16%,
+   so their displayed prices understate our required net-equivalent by ~4%.
+
+6. LEAD-TIME: Iranian Caspian bookings are short-lead except holidays.
+   How should the discount-ladder thresholds (7/3/1 days) be chosen, and how
+   do we detect from our own first_seen data that the thresholds are wrong
+   and re-fit them?
+
+7. VALIDATION: Data starts 2026-08-08. Propose a realistic backtest /
+   validation plan for v1 rules: what can be validated now, what must wait,
+   and the exact metric definitions (per-night occupancy error, price error,
+   revenue simulation vs fixed-price baseline).
+
+8. COMMERCIAL PLAYBOOK: From PriceLabs / Beyond / Wheelhouse feature sets,
+   which 2-3 features give the most value for a ONE-cabin host and are cheap
+   to build locally? Which should we deliberately skip?
+
+9. PEAK CLASSES: How to convert DI 0-100 into normal/high/peak/super-peak
+   with defensible cutoffs (fixed thresholds? quantiles of the 90-night
+   distribution? historical price behavior of rivals?).
+
+10. BLUNT CHECK: What in our plan is wrong or over-engineered for ONE cabin?
+   What would you cut from v1 to ship faster without losing the core value?
+
+11. DASHBOARD: The 5 KPIs that matter most on the dashboard for this host.
+
+12. ONE CHANGE: If you could make only ONE change to maximize this project's
+   outcome, what would it be?
+
+
+6. OUTPUT FORMAT REQUESTED
+--------------------------
+- Numbered answers matching question numbers 1-12, bullet-dense.
+- Formulas in plain text; Python pseudo-code allowed.
+- Tag each suggestion [proven] / [likely] / [speculative].
+- End with a "Top 5 changes by impact/effort" table (High/Med/Low).
+- Do NOT restate our plan back to us. Do NOT lecture about Iran sanctions
+  or market risk. Assume all constraints are fixed.

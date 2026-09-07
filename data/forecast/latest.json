@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-09-07T23:13:50",
+ "generated_at": "2026-09-07T23:14:44",
  "anchor": 2400000,
  "commission_factor": 1.0476,
  "horizon_days": 90,
@@ -147,7 +147,7 @@
    "price": 2997000,
    "rival": {
     "n_rivals": 34,
-    "booked_share": 0.5882352941176471,
+    "booked_share": 0.5588235294117647,
     "p20": 3200000,
     "p50": 5000000,
     "p85": 6500000,
@@ -393,7 +393,7 @@
    "price": 2830000,
    "rival": {
     "n_rivals": 34,
-    "booked_share": 0.23529411764705882,
+    "booked_share": 0.20588235294117646,
     "p20": 3000000,
     "p50": 4000000,
     "p85": 6500000,
@@ -434,7 +434,7 @@
    "price": 3330000,
    "rival": {
     "n_rivals": 34,
-    "booked_share": 0.3235294117647059,
+    "booked_share": 0.29411764705882354,
     "p20": 3200000,
     "p50": 5000000,
     "p85": 6500000,
@@ -475,7 +475,7 @@
    "price": 2970000,
    "rival": {
     "n_rivals": 34,
-    "booked_share": 0.29411764705882354,
+    "booked_share": 0.2647058823529412,
     "p20": 2500000,
     "p50": 3000000,
     "p85": 5000000,
@@ -3137,14 +3137,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 76
    },
@@ -3158,8 +3159,8 @@
    "lead_days": 76,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-23",
@@ -3178,14 +3179,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 77
    },
@@ -3199,8 +3201,8 @@
    "lead_days": 77,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-24",
@@ -3219,14 +3221,15 @@
    "di": 50.8,
    "class_": "High",
    "multiplier": 1.185,
-   "price": 3020000,
+   "price": 2840000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 78
    },
@@ -3240,8 +3243,8 @@
    "lead_days": 78,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-25",
@@ -3260,14 +3263,15 @@
    "di": 64.3,
    "class_": "Peak",
    "multiplier": 1.341,
-   "price": 3424000,
+   "price": 3220000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 3500000,
     "p85": 5500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 79
    },
@@ -3281,8 +3285,8 @@
    "lead_days": 79,
    "is_orphan": false,
    "min_stay": 2,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-26",
@@ -3304,11 +3308,12 @@
    "price": 4896000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1700000,
     "p50": 3500000,
     "p85": 5500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 80
    },
@@ -3322,7 +3327,7 @@
    "lead_days": 80,
    "is_orphan": false,
    "min_stay": 3,
-   "rival_state": "ok",
+   "rival_state": "unknown",
    "ladder_mult": 1.2
   },
   {
@@ -3342,14 +3347,15 @@
    "di": 69.2,
    "class_": "Peak",
    "multiplier": 1.444,
-   "price": 3690000,
+   "price": 3470000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 81
    },
@@ -3363,8 +3369,8 @@
    "lead_days": 81,
    "is_orphan": false,
    "min_stay": 2,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-28",
@@ -3383,14 +3389,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 82
    },
@@ -3404,8 +3411,8 @@
    "lead_days": 82,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-29",
@@ -3424,14 +3431,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 83
    },
@@ -3445,8 +3453,8 @@
    "lead_days": 83,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-11-30",
@@ -3465,14 +3473,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 84
    },
@@ -3486,8 +3495,8 @@
    "lead_days": 84,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-12-01",
@@ -3506,14 +3515,15 @@
    "di": 50.8,
    "class_": "High",
    "multiplier": 1.185,
-   "price": 3020000,
+   "price": 2840000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 85
    },
@@ -3527,8 +3537,8 @@
    "lead_days": 85,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-12-02",
@@ -3547,14 +3557,15 @@
    "di": 64.3,
    "class_": "Peak",
    "multiplier": 1.341,
-   "price": 3424000,
+   "price": 3220000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 3500000,
     "p85": 5500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 86
    },
@@ -3568,8 +3579,8 @@
    "lead_days": 86,
    "is_orphan": false,
    "min_stay": 2,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-12-03",
@@ -3591,11 +3602,12 @@
    "price": 4896000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1700000,
     "p50": 3500000,
     "p85": 5500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 87
    },
@@ -3609,7 +3621,7 @@
    "lead_days": 87,
    "is_orphan": false,
    "min_stay": 3,
-   "rival_state": "ok",
+   "rival_state": "unknown",
    "ladder_mult": 1.2
   },
   {
@@ -3629,14 +3641,15 @@
    "di": 69.2,
    "class_": "Peak",
    "multiplier": 1.444,
-   "price": 3690000,
+   "price": 3470000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 88
    },
@@ -3650,8 +3663,8 @@
    "lead_days": 88,
    "is_orphan": false,
    "min_stay": 2,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   },
   {
    "date": "2026-12-05",
@@ -3670,14 +3683,15 @@
    "di": 52.5,
    "class_": "High",
    "multiplier": 1.205,
-   "price": 3073000,
+   "price": 2890000,
    "rival": {
     "n_rivals": 21,
-    "booked_share": 0.047619047619047616,
+    "booked_share": 0.0,
     "p20": 1500000,
     "p50": 2500000,
     "p85": 4500000,
-    "state": "ok",
+    "state": "unknown",
+    "reason": "no-pickup-thin",
     "coverage": 1.0,
     "lead": 89
    },
@@ -3691,8 +3705,8 @@
    "lead_days": 89,
    "is_orphan": false,
    "min_stay": 1,
-   "rival_state": "ok",
-   "ladder_mult": 1.0634920634920635
+   "rival_state": "unknown",
+   "ladder_mult": 1.0
   }
  ]
 }

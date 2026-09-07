@@ -1,0 +1,17 @@
+# runtime artifacts
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# local data (rebuildable): own collector DB, backtest outputs, forecasts
+data/peak_forecast.db
+data/forecast/
+data/backtest/
+data/logs/
+
+# secrets / personal
+own_bookings.json
+data/own_bookings.json
+
+# keep (build artifacts needed by dashboard):
+# data/seasonality.json, data/yearmap-*.json, data/persian_holiday.db
